@@ -15,6 +15,7 @@ print(f'type: {type(one)}')
 print(f'array[0] = {name[0]}')
 print(f'len: {len(person)}')
 print(f'slice: {person[10:15]}')
+print(f'split: {name.split(' ')}')
 print("Barney Rubble" not in person)
 
 for c in "abc".upper():
