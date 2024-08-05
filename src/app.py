@@ -6,3 +6,6 @@ print(greeting)
 today: datetime = datetime.today()
 print('Date: ' + today.strftime('%Y-%m-%d'))
 print('Time: ' + today.strftime('%H:%M:%S'))
+
+closing: str = 'Code on!'
+print(closing)
