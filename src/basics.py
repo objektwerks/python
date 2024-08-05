@@ -23,6 +23,6 @@ for c in "abc".upper():
 multilineComment: str = """
   multiline comment:
   that fails to format
-  correctly.
+  correctly as expected.
 """.strip()
 print(multilineComment)
