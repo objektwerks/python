@@ -26,9 +26,9 @@ for c in "abc".upper():
   print(c)
 
 multilineComment: str = """
-  multiline:
-  that fails to format
-  correctly as expected.
+multiline:
+that fails to format
+correctly as expected.
 """.strip()
 print(multilineComment)
 
