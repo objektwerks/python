@@ -5,4 +5,4 @@ print(greeting)
 
 today: datetime = datetime.today()
 print("Date: " + today.strftime('%Y-%m-%d'))
-print("Time: " + today.strftime("%X"))
+print("Time: " + today.strftime('%H:%M:%S'))
