@@ -1,12 +1,5 @@
 # strings
 
-multilineComment: str = """
-  multiline comment:
-  that fails to format
-  correctly.
-""".strip()
-print(multilineComment)
-
 name: str = 'Fred Flintstone'
 age: int = 27
 person: str = f'f-string: {name} is {age}.'
@@ -19,3 +12,10 @@ print("Barney Rubble" not in person)
 
 for c in "abc".upper():
   print(c)
+
+multilineComment: str = """
+  multiline comment:
+  that fails to format
+  correctly.
+""".strip()
+print(multilineComment)
