@@ -17,5 +17,5 @@ print(f'len: {len(person)}')
 print(f'slice: {person[10:15]}')
 print("Barney Rubble" not in person)
 
-for c in "abc":
+for c in "abc".upper():
   print(c)
