@@ -14,9 +14,4 @@ PyCharm Virtual Env
 
 Run
 ---
-1. cd src/**/*.py
-2. python3.12 *.py
-
-PyCharm Run
------------
-1. right-click *.py > run
+1. python3.12 ./src/app.py
