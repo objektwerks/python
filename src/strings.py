@@ -13,3 +13,5 @@ age = 27
 person = f"{name} is {age}."
 print(person)
 print()
+
+print(person[0:4])
