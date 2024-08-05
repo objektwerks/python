@@ -18,3 +18,8 @@ floats: set[float] = {1.1, 2.2, 3.3, 1.1, 2.2, 3.3}
 print(f'set: {floats}')
 print(f'len: {len(floats)}')
 print(f'type: {type(floats)}')
+
+pairs: dict[int, str] = {1: 'a', 2: 'b', 3: 'c'}
+print(f'map: {pairs}')
+print(f'len: {len(pairs)}')
+print(f'type: {type(pairs)}')
