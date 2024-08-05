@@ -1,4 +1,4 @@
-# basics
+# strings
 
 multilineComment: str = """
     This is a multiline
