@@ -1,6 +1,6 @@
 from datetime import datetime
 
-greeting: str = 'Greetings, Pythonistas!'
+greeting: str = 'Greeting: Greetings, Pythonistas!'
 print(greeting)
 
 today: datetime = datetime.today()
