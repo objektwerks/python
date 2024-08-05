@@ -5,9 +5,11 @@ age: int = 27
 person: str = f'f-string: {name} is {age}.'
 print(person)
 
-print(f'str cast: {str(3)}')
-print(f'int cast: {int(3)}')
-print(f'float cast: {float(3)}')
+print(f'str cast: {str(1)}')
+print(f'int cast: {int(1)}')
+print(f'float cast: {float(1)}')
+
+print(f'type: {type(1)}')
 
 print(f'array[0] = {name[0]}')
 print(f'len: {len(person)}')
