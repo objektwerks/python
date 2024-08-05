@@ -15,3 +15,4 @@ Run
 Resources
 ---------
 * [W3C Python Tutorial](https://www.w3schools.com/python/)
+* [Real Python](https://realpython.com/)
