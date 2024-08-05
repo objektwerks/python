@@ -11,3 +11,7 @@ Virtual Env
 Run
 ---
 1. python3.12 ./src/*.py
+
+Resources
+---------
+* [W3C Python Tutorial](https://www.w3schools.com/python/)
