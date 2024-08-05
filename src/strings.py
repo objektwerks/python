@@ -15,6 +15,8 @@ print(person)
 print(f'array[0] = {name[0]}')
 print(f'len: {len(person)}')
 print(f'slice: {person[10:15]}')
+print("Barney Rubble" not in person)
+
 
 for c in "abc":
   print(c)
