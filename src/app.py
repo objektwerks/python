@@ -5,8 +5,8 @@ print(greeting)
 print()
 
 today: datetime = datetime.today()
-print('Date: ' + today.strftime('%Y-%m-%d'))
 print('Time: ' + today.strftime('%H:%M:%S'))
+print('Date: ' + today.strftime('%Y-%m-%d'))
 
 print()
 closing: str = 'Code on!'
