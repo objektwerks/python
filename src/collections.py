@@ -13,3 +13,8 @@ print(f'type: {type(bag)}')
 strings: tuple[str, str, str] = ('a', 'b', 'c')
 print(f'tuple: {tuple}')
 print(f'type: {type(strings)}')
+
+floats: set[float] = {1.1, 2.2, 3.3, 1.1, 2.2, 3.3}
+print(f'set: {floats}')
+print(f'len: {len(floats)}')
+print(f'type: {type(floats)}')
