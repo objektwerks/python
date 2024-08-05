@@ -1,1 +1,2 @@
-print('Greetings, Pythonistas!')
+greeting: str = 'Greetings, Pythonistas!'
+print(greeting)
