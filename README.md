@@ -8,10 +8,6 @@ Virtual Env
 2. source venv/bin/activate
 >See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
-PyCharm Virtual Env
--------------------
->See [VE Setup](https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-requirements)
-
 Run
 ---
 1. python3.12 ./src/app.py
