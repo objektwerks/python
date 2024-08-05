@@ -10,4 +10,4 @@ Virtual Env
 
 Run
 ---
-1. python3.12 ./src/app.py
+1. python3.12 ./src/*.py
