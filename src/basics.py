@@ -25,11 +25,11 @@ print(f'boolean: 2 > 1 = {2 > 1}')
 for c in "abc".upper():
   print(c)
 
+print('escape: I am \'Fred\'!')
+
 multilineComment: str = '''
 multiline:
 that fails to format
 correctly as expected.
 '''.strip()
 print(multilineComment)
-
-print('escape: I am \'Fred\'!')
