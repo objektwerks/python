@@ -14,4 +14,5 @@ person = f"{name} is {age}."
 print(person)
 print()
 
+print(f'len: {len(person)}')
 print(person[0:4])
