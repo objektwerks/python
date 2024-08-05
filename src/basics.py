@@ -17,7 +17,8 @@ print(f'len: {len(person)}')
 print(f'slice: {person[10:15]}')
 print(f'split: {name.split(' ')}')
 
-print("Barney Rubble" not in person)
+print('Barney Rubble' not in person)
+print(f'boolean: 2 > 1 = {2 > 1}')
 
 for c in "abc".upper():
   print(c)
