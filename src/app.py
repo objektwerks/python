@@ -4,6 +4,5 @@ greeting: str = 'Greetings, Pythonistas!'
 print(greeting)
 
 today = datetime.today()
-
-print(today.strftime("%x"))
-print(today.strftime("%X"))
+print("Date: " + today.strftime("%x"))
+print("Time: " + today.strftime("%X"))
