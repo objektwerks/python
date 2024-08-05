@@ -10,6 +10,8 @@ print(f'str cast: {str(one)}')
 print(f'int cast: {int(one)}')
 print(f'float cast: {float(one)}')
 
+twoj: complex = 2j
+print(f'complex type: {type(twoj)}')
 print(f'type: {type(one)}')
 
 print(f'array[0] = {name[0]}')
