@@ -15,4 +15,4 @@ print(person)
 print()
 
 print(f'len: {len(person)}')
-print(person[0:4])
+print(f'slice: {person[0:4]}')
