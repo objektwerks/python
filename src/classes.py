@@ -17,10 +17,11 @@ class Person:
 print(f'person: {Person('Fred Flintstone', 27)}')
 
 class Student(Person):
-  def __init__(self, name, age):
+  def __init__(self, name, age, school):
     super().__init__(name, age)
+    self.school = school
 
   def __str__(self):
-    return f'[Student] name: {self.name} age: {self.age}'
+    return f'[Student] name: {self.name} age: {self.age} school: {self.school}'
 
-print(f'person: {Student('Barney Rubble', 27)}')
+print(f'person: {Student('Barney Rubble', 27, 'Rockhurst')}')
