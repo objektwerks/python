@@ -1,4 +1,4 @@
-# collections
+# data structures
 from array import array
 
 ints: list[int] = [1, 2, 3]
