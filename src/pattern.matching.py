@@ -33,6 +33,8 @@ class Circle:
   
 def matchOnCircle(circle: Circle) -> str:
   match circle:
-    case Circle(radius): return f'a radius of {radius} equals a diameter of {radius * 2}'
+    case Circle(radius): return f'a diameter of {radius * 2}'
     case _: return 'unknown'
 
+circle = Circle(1.5)
+print(f'match on {circle} to {matchOnCircle(circle)}')
