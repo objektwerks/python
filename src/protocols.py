@@ -14,3 +14,8 @@ class Cat(Animal):
   def speak(self) -> str:
     return 'meow'
   
+def speak(animal: Animal) -> str:
+    return animal.speak()
+  
+print(f'Bear speak - {Bear().speak()}')
+print(f'Cat speak - {Cat().speak()}')
