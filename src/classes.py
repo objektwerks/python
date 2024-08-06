@@ -19,3 +19,4 @@ print(f'person: {Person('Fred Flintstone', 27)}')
 class Student(Person):
   pass
 
+print(f'student: {Student('Barney Rubble', 27)}')
