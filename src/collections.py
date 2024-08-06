@@ -1,4 +1,5 @@
 # collections
+from array import array
 
 ints: list[int] = [1, 2, 3]
 print(f'list: {ints}')
@@ -23,3 +24,6 @@ pairs: dict[int, str] = {1: 'a', 2: 'b', 3: 'c'}
 print(f'map: {pairs}')
 print(f'len: {len(pairs)}')
 print(f'type: {type(pairs)}')
+
+numbers: array[int] = [1, 2, 3]
+print(f'array type: {type(numbers)}')
