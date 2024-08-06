@@ -14,8 +14,8 @@ class Person:
   def __str__(self):
     return f'[Person] name: {self.name} age: {self.age}'
 
-  def speak(self):
-    print(f'{self.name} speaking as person ...')
+  def speak(self) -> str:
+    return f'{self.name} speaking as person ...'
 
 print(f'person: {Person('Fred Flintstone', 27)}')
 print(f'person: {Person('Fred Flintstone', 27).speak()}')
