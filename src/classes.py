@@ -27,4 +27,7 @@ class Student(Person):
   def __str__(self):
     return f'[Student] name: {self.name} age: {self.age} school: {self.school}'
 
+  def speak(self):
+    print(f'{self.name} speaking as student ...')
+
 print(f'person: {Student('Barney Rubble', 27, 'Rockhurst')}')
