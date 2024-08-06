@@ -17,6 +17,7 @@ class Person:
 print(f'person: {Person('Fred Flintstone', 27)}')
 
 class Student(Person):
-  pass
+  def __init__(self, name, age):
+    Person.__init__(self, name, age)
 
 print(f'student: {Student('Barney Rubble', 27)}')
