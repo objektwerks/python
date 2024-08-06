@@ -1,4 +1,6 @@
 # pattern matching
+# see https://www.python-engineer.com/posts/pattern-matching-python/
+
 from dataclasses import dataclass
 from enum import Enum
 
