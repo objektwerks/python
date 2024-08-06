@@ -31,6 +31,8 @@ class Circle:
   def diameter(self) -> float:
     return self.radius * 2
   
-  def circumference(self) -> float:
-    return 2 * 3.14 * self.radius
-  
+def matchOnCircle(circle: Circle) -> str:
+  match circle:
+    case Circle(radius): return f'a radius of {radius} equals a diameter of {radius * 2}'
+    case _: return 'unknown'
+
