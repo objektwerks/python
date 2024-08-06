@@ -21,10 +21,11 @@ print(f'len: {len(floats)}')
 print(f'type: {type(floats)}')
 
 pairs: dict[int, str] = {1: 'a', 2: 'b', 3: 'c'}
-print(f'map: {pairs}')
+print(f'dict: {pairs}')
 print(f'len: {len(pairs)}')
 print(f'type: {type(pairs)}')
 
 numbers: array[int] = array('i', [1, 2, 3])
+print(f'array: {numbers}')
 print(f'len: {len(numbers)}')
 print(f'type: {type(numbers)}')
