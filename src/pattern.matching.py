@@ -1,4 +1,5 @@
 # pattern matching
+from dataclasses import dataclass
 
 def matchOnInt(i: int) -> str:
   match i:
@@ -22,3 +23,14 @@ def matchOnList(ints: list[int]) -> str:
 
 ints: list[int] = [1, 2, 3]
 print(f'match on {ints} to {matchOnList(ints)}')
+
+@dataclass(frozen=True)
+class Circle:
+  radius: float = 0.0
+
+  def diameter(self) -> float:
+    return self.radius * 2
+  
+  def circumference(self) -> float:
+    return 2 * 3.14 * self.radius
+  
