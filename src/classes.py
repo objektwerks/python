@@ -32,3 +32,4 @@ class Student(Person):
     print(f'{self.name} speaking as student ...')
 
 print(f'person: {Student('Barney Rubble', 27, 'Rockhurst')}')
+print(f'person: {Student('Barney Rubble', 27, 'Rockhurst').speak()}')
