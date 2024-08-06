@@ -6,11 +6,11 @@ def add(ints: list[int]) -> int:
     acc += i
   return acc
 
-def square(i: int = 1) -> int:
-  return i * i
-
 odds: list[int] = [1, 2, 3]
 print(f'{odds} sum equals {add(ints=odds)}')
+
+def square(i: int = 1) -> int:
+  return i * i
 
 two: int = 2
 print(f'{two} squared equals {square(two)}')
