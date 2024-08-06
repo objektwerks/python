@@ -11,4 +11,7 @@ class Person:
     self.name = name
     self.age = age
 
+  def __str__(self):
+    return f'[Person] name: {self.name} age: {self.age}'
+
 print(f'person: {Person('Fred Flintstone', 27)}')
