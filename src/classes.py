@@ -15,3 +15,7 @@ class Person:
     return f'[Person] name: {self.name} age: {self.age}'
 
 print(f'person: {Person('Fred Flintstone', 27)}')
+
+class Student(Person):
+  pass
+
