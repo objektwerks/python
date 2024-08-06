@@ -16,3 +16,7 @@ while i < 4:
   i += 1
 else:
   print(f"{i} is no longer less than {i} ")
+
+s: str = "abc"
+for s in s:
+  print(s)
