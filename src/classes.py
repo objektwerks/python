@@ -18,7 +18,7 @@ print(f'person: {Person('Fred Flintstone', 27)}')
 
 class Student(Person):
   def __init__(self, name, age):
-    Person.__init__(self, name, age)
+    super().__init__(name, age)
 
   def __str__(self):
     return f'[Student] name: {self.name} age: {self.age}'
