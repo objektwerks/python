@@ -4,11 +4,8 @@ from enum import Enum
 
 def matchOnInt(i: int) -> str:
   match i:
-    case 0: return 'zero'
-    case 1: return 'one'
-    case 2: return 'two'
-    case 3: return 'three'
-    case _: return 'unknown'
+    case _ as n if n < 4: return str(n)
+    case _: return f'{i} is outside of range: 0 to 3'
   
 print(f'match on 0 to {matchOnInt(0)}')
 print(f'match on 1 to {matchOnInt(1)}')
