@@ -18,6 +18,7 @@ class Person:
     print(f'{self.name} speaking as person ...')
 
 print(f'person: {Person('Fred Flintstone', 27)}')
+print(f'person: {Person('Fred Flintstone', 27).speak()}')
 
 class Student(Person):
   def __init__(self, name, age, school):
