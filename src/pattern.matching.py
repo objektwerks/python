@@ -1,5 +1,6 @@
 # pattern matching
 from dataclasses import dataclass
+from enum import Enum
 
 def matchOnInt(i: int) -> str:
   match i:
@@ -37,3 +38,18 @@ def matchOnCircle(circle: Circle) -> str:
 circle = Circle(1.5)
 print(f'match on {Circle(1.5)} to {matchOnCircle(circle)}')
 print(f'match on {Circle()} to {matchOnCircle(Circle())}')
+
+class Color(Enum):
+    red: int = 0
+    green: int = 1
+    blue: int = 2
+
+def matchOnColor(color: Color) -> str:
+  match color:
+    case Color.red: return 'red'
+    case Color.green: return 'green'
+    case Color.blue: return 'blue'
+    case _: return 'unknown'
+
+color: Color = Color.red
+print(f'match on {color} to {matchOnColor(color)}')
