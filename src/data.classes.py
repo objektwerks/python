@@ -16,5 +16,8 @@ class Pos:
     lat: float = 0.0
 
 pos_one = Pos("a", 1.0, 1.0)
-pos_two = Pos('b', 1.0, 1.0)
-pos_three = Pos('c', 3.0, 3.0)
+pos_two = Pos('a', 1.0, 1.0)
+pos_three = Pos('b', 1.0, 2.0)
+
+print(f'{pos_one} eq {pos_two} : {pos_one.__eq__(pos_two)}')
+print(f'{pos_one} eq {pos_three} : {pos_one.__eq__(pos_three)}')
