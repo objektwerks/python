@@ -26,4 +26,5 @@ print(f'len: {len(pairs)}')
 print(f'type: {type(pairs)}')
 
 numbers: array[int] = array('i', [1, 2, 3])
-print(f'array type: {type(numbers)}')
+print(f'len: {len(numbers)}')
+print(f'type: {type(numbers)}')
