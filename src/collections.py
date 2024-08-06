@@ -25,5 +25,5 @@ print(f'map: {pairs}')
 print(f'len: {len(pairs)}')
 print(f'type: {type(pairs)}')
 
-numbers: array[int] = [1, 2, 3]
+numbers: array[int] = array("i", [1, 2, 3])
 print(f'array type: {type(numbers)}')
