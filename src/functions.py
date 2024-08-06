@@ -9,8 +9,8 @@ def add(ints: list[int]) -> int:
 def square(i: int = 1) -> int:
   return i * i
 
-numbers: list[int] = [1, 2, 3]
-print(f'{numbers} sum equals {add(numbers)}')
+odds: list[int] = [1, 2, 3]
+print(f'{odds} sum equals {add(ints=odds)}')
 
 two: int = 2
 print(f'{two} squared equals {square(two)}')
