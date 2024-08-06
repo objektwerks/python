@@ -20,4 +20,7 @@ class Student(Person):
   def __init__(self, name, age):
     Person.__init__(self, name, age)
 
-print(f'student: {Student('Barney Rubble', 27)}')
+  def __str__(self):
+    return f'[Student] name: {self.name} age: {self.age}'
+
+print(f'person: {Student('Barney Rubble', 27)}')
