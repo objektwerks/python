@@ -1,6 +1,6 @@
 # protocols
 
-from typing import Protocol
+from typing import Protocol, TypeVar
 
 class Animal(Protocol):
   def speak(self) -> str:
@@ -19,3 +19,6 @@ def speak(animal: Animal) -> str:
   
 print(f'Bear speak - {Bear().speak()}')
 print(f'Cat speak - {Cat().speak()}')
+
+T = TypeVar("T")
+
