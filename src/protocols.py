@@ -24,18 +24,18 @@ T = TypeVar("T", bound=int | float)
 
 class Adder(Protocol[T]):
   def add(self, x: T, y: T) -> T:
-      return x + y
+    ...
 
 class IntAdder:
   def add(self, x: int, y: int) -> int:
-      return x + y
+    return x + y
 
 class FloatAdder:
   def add(self, x: float, y: float) -> float:
-      return x + y
+    return x + y
 
 def add(adder: Adder, x: T, y: T) -> T:
-    return adder.add(x, y)
+  return adder.add(x, y)
 
 print(f'add ints 1 and 2 == {add(IntAdder(), 1, 2)}')
 print(f'add ints 1 and 2 == {add(FloatAdder(), 1, 2)}')
