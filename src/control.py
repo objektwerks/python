@@ -15,8 +15,8 @@ while i < 4:
   print(i)
   i += 1
 else:
-  print(f"{i} is no longer less than {i} ")
+  print(f'{i} is no longer less than {i}')
 
-s: str = "abc"
+s: str = 'abc'
 for s in s:
   print(s)
