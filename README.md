@@ -2,6 +2,10 @@ Python
 ------
 Survey of Python 3 features.
 
+Todo
+----
+1. Explore [Expression](https://github.com/dbrattli/Expression)
+
 Virtual Env
 -----------
 1. python3.12 -m venv venv
