@@ -33,3 +33,4 @@ print(f'type: {type(numbers)}')
 
 animals = ["ferret", "vole", "dog", "gecko"]
 print(f'sorted animals to {sorted(animals)}')
+print(f'sorted animals by len to {sorted(animals, key=len)}')
