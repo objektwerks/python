@@ -32,3 +32,4 @@ Resources
 * [Python Org](https://www.python.org/)
 * [W3C Python Tutorial](https://www.w3schools.com/python/)
 * [Real Python](https://realpython.com/)
+* [Python FP](https://www.kite.com/blog/python/functional-programming/)
