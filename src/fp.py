@@ -1,2 +1,2 @@
-# function programming - fp
+# functional programming - fp
 
