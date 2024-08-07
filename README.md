@@ -15,6 +15,10 @@ Install
 -------
 1. pip3 install -r requirements.txt
 
+MyPy
+----
+1. mypy ./src
+
 Run
 ---
 1. python3.12 ./src/*.py
