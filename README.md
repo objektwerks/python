@@ -2,10 +2,6 @@ Python
 ------
 Survey of Python 3 features.
 
-Todo
-----
-1. Explore [Expression](https://github.com/dbrattli/Expression)
-
 Virtual Env
 -----------
 1. python3.12 -m venv venv
@@ -35,3 +31,4 @@ Resources
 * [Python FP](https://www.kite.com/blog/python/functional-programming/)
 * [Practial FP](https://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming)
 * [FP in Python](https://stackabuse.com/functional-programming-in-python/)
+* [Expression](https://github.com/dbrattli/Expression)
