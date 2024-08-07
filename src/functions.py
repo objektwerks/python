@@ -22,7 +22,7 @@ def multiply(multiplier: int) -> Callable[[int], int]:
   return lambda i: i * multiplier
 
 multiplier = multiply(6)
-print(f'high order function {multiplier} to {multiplier(6)}')
+print(f'partial to {multiplier(6)}')
 
 def factorial(n: int, acc: int = 1) -> int:
   if n == 1:
