@@ -23,6 +23,10 @@ add: Callable[[int, int], int] = lambda x, y: x + y
 total: int = reduce(add, ints)
 print(f'reduce {ints} to {total}')
 
+odd: Callable[[int], bool] = lambda i: i % 2 != 0
+reduced: int = reduce(add, list(map(square, filter(odd, ints))))
+print(f'reduce(add, list(map(square, filter(odd, ints)))) to {reduced}')
+
 def power(base: int, exponent: int) -> int:
   return base ** exponent
 
