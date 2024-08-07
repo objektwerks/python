@@ -1,2 +1,0 @@
-# expression - functional programming library
-
