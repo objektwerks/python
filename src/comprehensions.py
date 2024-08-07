@@ -22,5 +22,7 @@ squared: dict[int, int] = {value: value * value for value in pairs}
 print(f'pairs {pairs} squared {squared}')
 
 def getTemps():
-  return random.randrange(80, 100)
+  return random.randrange(70, 100)
 
+temps: list[int] = [temp for _ in range(10) if (temp := getTemps()) >= 85]
+print(f'for temps [70 - 100] >= 85 {temps}')
