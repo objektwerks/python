@@ -26,3 +26,6 @@ def getTemps():
 
 temps: list[int] = [temp for _ in range(10) if (temp := getTemps()) >= 85]
 print(f'for temps [70 - 100] >= 85 {temps}')
+
+generator: int = sum(i for i in range(1_000_000))
+print(f'generator sum range(1_000_000) to {generator} ')
