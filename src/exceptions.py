@@ -1,7 +1,7 @@
 # exceptions
 
 def openFile(file: str, options: str) -> str:
-  with open('data.txt', 'r') as f:
+  with open(file, options) as f:
     return f.read()
 
 data: str
