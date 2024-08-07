@@ -1,4 +1,4 @@
-# functional programming - fp
+# fp - functional programming
 
 from functools import partial, reduce
 from typing import Callable
@@ -24,4 +24,4 @@ def power(base: int, exponent: int) -> int:
   return base ** exponent
 
 cube: partial[int] = partial(power, exponent=3)
-print(f'partial {cube} to cube(5)')
+print(f'partial {cube} to {cube(base=2)}')
