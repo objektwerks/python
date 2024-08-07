@@ -32,3 +32,4 @@ Resources
 * [Practial FP](https://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming)
 * [FP in Python](https://stackabuse.com/functional-programming-in-python/)
 * [Expression](https://github.com/dbrattli/Expression)
+* [Expression Tutorial](https://expression.readthedocs.io/en/latest/tutorial/introduction.html)
