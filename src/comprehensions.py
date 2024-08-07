@@ -11,6 +11,6 @@ print(f'even ints {evens}')
 odds: list[int] = [i for i in ints if i % 2 != 0]
 print(f'odd ints {odds}')
 
-quote: str = "life, uh, finds a way"
+quote: str = "When life throws you a few lemons, make lemonade!"
 vowels: set[str] = {char for char in quote if char in "aeiou"}
-print(f'from {quote}, vowels filtered and deduped to {vowels}')
+print(f'from \'{quote}\', with vowels filtered and deduped to {vowels}')
