@@ -11,4 +11,6 @@ try:
 except FileNotFoundError as error:
   print(f'error: {error}\n')
   data = openFile('requirements.txt', 'r')
-  print(f'opened \'requirements.txt\' file:\n\n{data}')
+  print(f'opened: \'requirements.txt\'\n')
+
+print(f'data:\n\n{data}')
