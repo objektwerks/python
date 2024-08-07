@@ -8,7 +8,7 @@ def matchOnInt(i: int) -> str:
   match i:
     case _ as n if n < 4: return str(n)
     case _: return f'{i} is outside of range: 0 to 3'
-  
+
 print(f'match on 0 to {matchOnInt(0)}')
 print(f'match on 1 to {matchOnInt(1)}')
 print(f'match on 2 to {matchOnInt(2)}')
@@ -27,7 +27,7 @@ print(f'match on {ints} to {matchOnList(ints)}')
 @dataclass(frozen=True)
 class Circle:
   radius: float = 0.0
-  
+
 def matchOnCircle(circle: Circle) -> str:
   match circle:
     case Circle(radius) if radius < 0.0: return f'a diameter of 0.0'
@@ -39,9 +39,9 @@ print(f'match on {Circle(1.5)} to {matchOnCircle(circle)}')
 print(f'match on {Circle()} to {matchOnCircle(Circle())}')
 
 class Color(Enum):
-    red: int = 0
-    green: int = 1
-    blue: int = 2
+  red: int = 0
+  green: int = 1
+  blue: int = 2
 
 def matchOnColor(color: Color) -> str:
   match color:
