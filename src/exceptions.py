@@ -20,4 +20,4 @@ print(f'data:\n\n{data}')
 assert(len(data) > 0)
 
 if (len(data) == 0):
-  raise FileNotFoundError
+  raise Exception(f'raise: data length is zero')
