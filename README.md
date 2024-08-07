@@ -1,6 +1,6 @@
 Python
 ------
-Python 3 feature tests.
+Survey of Python 3 features.
 
 Virtual Env
 -----------
