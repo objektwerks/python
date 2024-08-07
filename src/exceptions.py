@@ -16,3 +16,4 @@ finally:
   print(f'finally: ignore\n')
 
 print(f'data:\n\n{data}')
+assert(len(data) > 0)
