@@ -16,4 +16,8 @@ finally:
   print(f'finally: ignore\n')
 
 print(f'data:\n\n{data}')
+
 assert(len(data) > 0)
+
+if (len(data) == 0):
+  raise FileNotFoundError
