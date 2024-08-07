@@ -1,5 +1,7 @@
 # comprehensions
 
+import random
+
 ints: list[int] = [1, 2, 3]
 
 squares: list[int] = [i * i for i in ints]
@@ -18,3 +20,7 @@ print(f'from \'{quote}\', with vowels filtered and deduped to {vowels}')
 pairs: dict[int, int] = {1: 1, 2: 2, 3: 3}
 squared: dict[int, int] = {value: value * value for value in pairs}
 print(f'pairs {pairs} squared {squared}')
+
+def getTemps():
+  return random.randrange(80, 100)
+
