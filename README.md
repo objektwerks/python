@@ -34,3 +34,4 @@ Resources
 * [Real Python](https://realpython.com/)
 * [Python FP](https://www.kite.com/blog/python/functional-programming/)
 * [Practial FP](https://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming)
+* [FP in Python](https://stackabuse.com/functional-programming-in-python/)
