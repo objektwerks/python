@@ -14,3 +14,7 @@ print(f'odd ints {odds}')
 quote: str = "When life throws you a few lemons, make lemonade!"
 vowels: set[str] = {char for char in quote if char in "aeiou"}
 print(f'from \'{quote}\', with vowels filtered and deduped to {vowels}')
+
+pairs: dict[int, int] = {1: 1, 2: 2, 3: 3}
+squared: dict[int, int] = {value: value * value for value in pairs}
+print(f'pairs {pairs} squared {squared}')
