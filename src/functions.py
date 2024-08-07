@@ -1,5 +1,7 @@
 # functions
 
+from typing import Callable
+
 def add(ints: list[int]) -> int:
   acc = 0
   for i in ints:
@@ -15,6 +17,12 @@ def square(i: int = 1) -> int:
 two: int = 2
 print(f'{two} squared equals {square(two)}')
 print(f'default arg squared equals {square()}')
+
+def multiply(multiplier: int) -> Callable[[int], int]:
+  return lambda i: i * multiplier
+
+multiplier = multiply(6)
+print(f'curry function {multiplier} to {multiplier(6)}')
 
 def factorial(n: int, acc: int = 1) -> int:
   if n == 1:
