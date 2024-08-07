@@ -12,3 +12,8 @@ ints: list[int] = [1, 2, 3]
 
 squares = map(square, ints)
 print(f'map(square,{ints}) to {list(squares)}')
+
+evens = filter(even, ints)
+print(f'filter(even,{ints}) to {list(evens)}')
+
+odds = filter(odd, ints)
