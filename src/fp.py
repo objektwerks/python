@@ -1,6 +1,6 @@
 # functional programming - fp
 
-from functools import reduce
+from functools import partial, reduce
 from typing import Callable
 
 ints: list[int] = [1, 2, 3]
@@ -19,3 +19,9 @@ add: Callable[[int, int], int] = lambda x, y: x + y
 
 total: int = reduce(add, ints)
 print(f'reduce {ints} to {total}')
+
+def power(base: int, exponent: int) -> int:
+  return base ** exponent
+
+cube: partial[int] = partial(power, exponent=3)
+print(f'partial {cube} to cube(5)')
