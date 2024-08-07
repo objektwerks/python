@@ -1,7 +1,7 @@
 # data structures
 
 from array import array
-from collections import namedtuple
+from typing import NamedTuple
 
 ints: list[int] = [1, 2, 3]
 print(f'list: {ints}')
@@ -17,12 +17,12 @@ strings: tuple[str, str, str] = ('a', 'b', 'c')
 print(f'tuple: {strings}')
 print(f'type: {type(strings)}')
 
-point: tuple[float, float] = namedtuple('point', 'x y')
-point1 = point(1.0, 2.0)
-point2 = point(3.0, 4.0)
+Point = NamedTuple('Point', [('x', float), ('y', float)])
+point1 = Point(1.0, 2.0)
+point2 = Point(3.0, 4.0)
 print(f'point 1: {point1.x}/{point1.y}')
 print(f'point 2: {point2.x}/{point2.y}')
-print(f'type: {type(point)}')
+print(f'type: {type(Point)}')
 
 floats: set[float] = {1.1, 2.2, 3.3, 1.1, 2.2, 3.3}
 print(f'set: {floats}')
