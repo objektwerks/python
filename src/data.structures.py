@@ -30,3 +30,6 @@ numbers: array[int] = array('i', [1, 2, 3])
 print(f'array: {numbers}')
 print(f'len: {len(numbers)}')
 print(f'type: {type(numbers)}')
+
+animals = ["ferret", "vole", "dog", "gecko"]
+print(f'sorted animals to {sorted(animals)}')
