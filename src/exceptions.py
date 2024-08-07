@@ -9,8 +9,10 @@ try:
   data = openFile('req.txt', 'r')
   print(f'opened \'req.txt\' file:\n\n{data}')
 except FileNotFoundError as error:
-  print(f'error: {error}\n')
+  print(f'except: {error}\n')
   data = openFile('requirements.txt', 'r')
   print(f'opened: \'requirements.txt\'\n')
+finally:
+  print(f'finally: ignore\n')
 
 print(f'data:\n\n{data}')
