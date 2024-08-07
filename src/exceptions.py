@@ -6,8 +6,8 @@ def openFile(file: str, options: str) -> str:
 
 data: str
 try:
-  data = openFile('requirements.txt', 'r')
+  data = openFile('req.txt', 'r')
+  print(f'opened \'req.txt\' file:\n\n{data}')
 except:
-  data = 'file not found'
-
-print(f'opened requirements.txt file: {data}')
+  data = openFile('requirements.txt', 'r')
+  print(f'opened \'requirements.txt\' file:\n\n{data}')
