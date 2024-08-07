@@ -8,6 +8,7 @@ data: str
 try:
   data = openFile('req.txt', 'r')
   print(f'opened \'req.txt\' file:\n\n{data}')
-except:
+except FileNotFoundError as error:
+  print(f'error: {error}\n')
   data = openFile('requirements.txt', 'r')
   print(f'opened \'requirements.txt\' file:\n\n{data}')
