@@ -68,4 +68,5 @@ def validate(dividend: int, divisor: int) -> float:
     case Try(tag="ok", ok=ok): return float(ok)
     case Try(error=error): return 0
 
-print(f'4 / 2 should equal 2: {validate(4,2) == 2}')
+print(f'4 / 2 should equal 2: {validate(4, 2) == 2}')
+print(f'4 / 0 should equal 0: {validate(4, 0) == 0}')
