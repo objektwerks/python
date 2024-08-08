@@ -96,4 +96,4 @@ def resultEffect(i: int) -> Generator[int, int, int]:
     y: int = yield from Ok(x + 1)
     return x + y
 
-print(f'result effect: {resultEffect(1)}')
+print(f'result effect: {resultEffect(1).ok}')
