@@ -84,9 +84,9 @@ print(f'Nothing equals: {Nothing}')
 
 @effect.option[int]()
 def optionEffect(i: int) -> Generator[int, int, int]:
-    x: int = yield i
-    y: int = yield from Some(x + 1)
-    return x + y
+  x: int = yield i
+  y: int = yield from Some(x + 1)
+  return x + y
 
 print(f'option effect: {optionEffect(1).value}')
 
