@@ -80,3 +80,4 @@ print(f'option 4 / 2 should equal 2: {check(4, 2) == Some(2)}')
 print(f'option 4 / 0 should equal 0: {check(4, 0) == Nothing}')
 
 print(f'Some(1).value equals: {Some(1).value}')
+print(f'Nothing equals: {Nothing}')
