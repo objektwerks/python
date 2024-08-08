@@ -26,6 +26,7 @@ Run
 Releases
 --------
 1. Initial Release [2024.8.7]
+2. Explored Expression Library [2024.8.8]
 
 Resources
 ---------
