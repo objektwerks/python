@@ -14,8 +14,8 @@ value: int = 1
 function1: Callable[[int], int] = lambda i: i + 1
 function2: Callable[[int], int] = lambda i: i + 2
 
-piped = pipe(value, function1, function2)
-composed = function2(function1(value))
+piped: int = pipe(value, function1, function2)
+composed: int = function2(function1(value))
 
 print(f'function1: {function1(value)}')
 print(f'function2: {function2(value)}')
@@ -25,8 +25,8 @@ print(f'function2(function1(value)): {composed}')
 print(f'piped vs composed equal: {piped == composed}')
 
 some: Option[int] = Some(1)
-function3 = lambda option: option.map(lambda i: i + 1)
-function4 = lambda option: option.map(lambda i: i + 2)
+function3: Callable[[Option[int]], Option[int]] = lambda option: option.map(lambda i: i + 1)
+function4: Callable[[Option[int]], Option[int]] = lambda option: option.map(lambda i: i + 2)
 
 print(f'function3: {function3(some)}')
 print(f'function4: {function4(some)}')
@@ -54,5 +54,5 @@ composeMapFilterFold = compose(
 )
 print(f'compose seq map filter fold: {composeMapFilterFold(ints)}')
 
-sum: int = ints.map(transform).filter(predicate).fold(fold, 0)
-print(f'fluent seq map filter fold: {sum}')
+fluent: int = ints.map(transform).filter(predicate).fold(fold, 0)
+print(f'fluent seq map filter fold: {fluent}')
