@@ -45,7 +45,6 @@ result: int = ints.pipe(
   seq.filter(predicate),
   seq.fold(fold, 0),
 )
-
 print(f'pipe seq map filter fold: {result}')
 
 composeMapFilterFold = compose(
