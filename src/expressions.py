@@ -92,8 +92,8 @@ print(f'option effect: {optionEffect(1).value}')
 
 @effect.result[int, Exception]()
 def resultEffect(i: int) -> Generator[int, int, int]:
-    x: int = yield from Ok(i)
-    y: int = yield from Ok(x + 1)
-    return x + y
+  x: int = yield from Ok(i)
+  y: int = yield from Ok(x + 1)
+  return x + y
 
 print(f'result effect: {resultEffect(1).ok}')
