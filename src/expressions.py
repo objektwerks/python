@@ -1,6 +1,6 @@
 # expression - functional programming library
 
-from expression import curry, pipe, Some, Option
+from expression import compose, curry, pipe, Some, Option
 from expression.collections import seq, Seq
 from typing import Callable
 
@@ -46,4 +46,11 @@ result: int = ints.pipe(
   seq.fold(fold, 0),
 )
 
-print(f'seq map filter fold: {result}')
+print(f'pipe seq map filter fold: {result}')
+
+composeMapFilterFold = compose(
+  seq.map(transform),
+  seq.filter(predicate),
+  seq.fold(fold, 0)
+)
+print(f'compose seq map filter fold: {composeMapFilterFold(ints)}')
