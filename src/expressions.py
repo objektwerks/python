@@ -1,6 +1,6 @@
 # expression - functional programming library
 
-from expression import compose, curry, pipe, Some, Option
+from expression import compose, curry, pipe, Some, Option, Failure, Success, Try
 from expression.collections import seq, Seq
 from typing import Callable
 
@@ -56,3 +56,10 @@ print(f'compose seq map filter fold: {composeMapFilterFold(ints)}')
 
 fluent: int = ints.map(transform).filter(predicate).fold(fold, 0)
 print(f'fluent seq map filter fold: {fluent}')
+
+def divide(dividend: int, divisor: int) -> Try[float]:
+  if divisor == 0:
+    return Failure(Exception("divisor is 0"))
+  else:
+    return Success(dividend / divisor)
+
