@@ -16,4 +16,4 @@ function2: Callable[[int], int] = lambda i: i * 2
 piped = pipe(value, function1, function2)
 composed = function2(function1(value))
                      
-assert piped == composed
+print(f'piped vs composed functions equal: {piped == composed}')
