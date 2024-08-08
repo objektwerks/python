@@ -30,4 +30,6 @@ function4 = lambda option: option.map(lambda i: i + 2)
 print(f'function3: {function3(some)}')
 print(f'function4: {function4(some)}')
 
+print(f'pipe(some, function3, function4): {piped}')
+print(f'function3(function4(some)): {composed}')
 print(f'option piped vs composed equal: {some.pipe(function3, function4) == function4(function3(some))}')
