@@ -63,3 +63,8 @@ def divide(dividend: int, divisor: int) -> Try[float]:
   else:
     return Success(dividend / divisor)
 
+def validate(dividend: int, divisor: int) -> float:
+  match divide(dividend, divisor):
+    case Try(tag="ok", ok=ok): return float(ok)
+    case Try(error=error): return 0
+
