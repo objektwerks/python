@@ -53,3 +53,6 @@ composeMapFilterFold = compose(
   seq.fold(fold, 0)
 )
 print(f'compose seq map filter fold: {composeMapFilterFold(ints)}')
+
+sum: int = ints.map(transform).filter(predicate).fold(fold, 0)
+print(f'fluent seq map filter fold: {sum}')
