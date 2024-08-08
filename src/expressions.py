@@ -17,4 +17,5 @@ piped = pipe(value, function1, function2)
 composed = function2(function1(value))
 
 print(f'piped: {piped}')
-print(f'piped vs composed functions equal: {piped == composed}')
+print(f'composed: {composed}')
+print(f'piped vs composed equal: {piped == composed}')
