@@ -1,8 +1,8 @@
 # expression - functional programming library
 
-from expression import Nothing, compose, curry, pipe, Some, Option, Failure, Success, Try
+from expression import Nothing, compose, curry, effect, pipe, Some, Option, Failure, Success, Try
 from expression.collections import seq, Seq
-from typing import Callable
+from typing import Callable, Generator
 
 @curry(1)
 def add(x: int, y: int) -> int:
@@ -81,3 +81,11 @@ print(f'option 4 / 0 should equal 0: {check(4, 0) == Nothing}')
 
 print(f'Some(1).value equals: {Some(1).value}')
 print(f'Nothing equals: {Nothing}')
+
+@effect.option[int]()
+def optionEffect(i: int) -> Generator[int, int, int]:
+    x: int = yield i
+    y: int = yield from Some(x + 1)
+    return x + y
+
+print(f'option effect: {optionEffect(1).value}')
