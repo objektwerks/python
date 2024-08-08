@@ -34,3 +34,16 @@ print(f'function4: {function4(some)}')
 print(f'pipe(some, function3, function4): {piped}')
 print(f'function3(function4(some)): {composed}')
 print(f'option piped vs composed equal: {some.pipe(function3, function4) == function4(function3(some))}')
+
+transform: Callable[[int], int] = lambda i: i + 1
+predicate: Callable[[int], bool] = lambda i: i % 2 == 0
+fold: Callable[[int, int], int] = lambda s, x: s + x
+
+ints: Seq[int] = Seq.of(1, 2, 3)
+result: int = ints.pipe(
+  seq.map(transform),
+  seq.filter(predicate),
+  seq.fold(fold, 0),
+)
+
+print(f'seq map filter fold: {result}')
