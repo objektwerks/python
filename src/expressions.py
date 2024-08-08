@@ -1,6 +1,7 @@
 # expression - functional programming library
 
 from expression import curry, pipe, Some, Option
+from expression.collections import seq, Seq
 from typing import Callable
 
 @curry(1)
