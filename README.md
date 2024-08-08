@@ -23,6 +23,10 @@ Run
 ---
 1. python3.12 ./src/*.py
 
+Releases
+--------
+1. Initial Release [2024.8.7]
+
 Resources
 ---------
 * [Python Org](https://www.python.org/)
