@@ -37,7 +37,7 @@ print(f'option piped vs composed equal: {some.pipe(function3, function4) == func
 
 transform: Callable[[int], int] = lambda i: i + 1
 predicate: Callable[[int], bool] = lambda i: i % 2 == 0
-fold: Callable[[int, int], int] = lambda s, x: s + x
+fold: Callable[[int, int], int] = lambda acc, i: acc + i
 
 ints: Seq[int] = Seq.of(1, 2, 3)
 result: int = ints.pipe(
