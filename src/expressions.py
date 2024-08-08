@@ -1,6 +1,6 @@
 # expression - functional programming library
 
-from expression import Nothing, compose, curry, effect, pipe, Some, Option, Failure, Success, Try
+from expression import Nothing, Ok, Result, compose, curry, effect, pipe, Some, Option, Failure, Success, Try
 from expression.collections import seq, Seq
 from typing import Callable, Generator
 
@@ -89,3 +89,11 @@ def optionEffect(i: int) -> Generator[int, int, int]:
     return x + y
 
 print(f'option effect: {optionEffect(1).value}')
+
+@effect.result[int, Exception]()
+def resultEffect(i: int):
+    x: int = yield from Ok(i)
+    y: int = yield from Ok(x + 1)
+    return x + y
+
+print(f'result effect: {resultEffect(1)}')
