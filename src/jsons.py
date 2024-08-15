@@ -18,3 +18,5 @@ for entry in os.listdir(rootpath):
     if os.path.isfile(os.path.join(rootpath, entry)):
         print(entry)
 
+os.remove('json.txt')
+print('\nremove: json.txt\n')
