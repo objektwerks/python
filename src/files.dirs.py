@@ -13,3 +13,10 @@ with open('test.txt', 'w') as f:
 
 os.remove('test.txt')
 print('remove text.txt')
+
+basepath: str = './'
+print("listdir ./")
+for entry in os.listdir(basepath):
+    if os.path.isfile(os.path.join(basepath, entry)):
+        print(entry)
+
