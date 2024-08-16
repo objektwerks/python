@@ -1,6 +1,6 @@
 Python
 ------
-Survey of Python 3 features.
+Survey of Python 3 features and external modules.
 
 Virtual Env
 -----------
