@@ -1,6 +1,6 @@
 certifi==2024.7.4
 charset-normalizer==3.3.2
-Expression==5.0.2
+Expression==5.2.0
 idna==3.7
 mypy==1.11.1
 mypy-extensions==1.0.0
