@@ -27,7 +27,7 @@ Dependencies
 
 MyPy
 ----
->Type checks all source files.
+>Type check all source files.
 1. mypy ./src
 
 Run
