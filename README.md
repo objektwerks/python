@@ -7,6 +7,7 @@ Python
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.12
 3. brew install mypy
+4. Install [VSCode](https://code.visualstudio.com/)
 
 Virtual Env
 -----------
