@@ -8,7 +8,7 @@ Python
 2. brew install python@3.12
 3. brew install mypy
 4. Install [VSCode](https://code.visualstudio.com/)
-5. Install VSCode Python Extensions: Python, Python Debugger, Pylance, MyPy Type Checker
+5. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance, MyPy Type Checker
 
 Virtual Env
 -----------
