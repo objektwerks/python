@@ -2,8 +2,8 @@ Python
 ------
 Survey of Python 3 features and external modules.
 
-Python
-------
+Development
+-----------
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.12
 3. brew install mypy
