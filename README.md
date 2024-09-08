@@ -32,7 +32,7 @@ MyPy
 
 Run
 ---
->Replace *.py with source file name.
+>Replace *.py with a source file name.
 1. python3.12 ./src/*.py
 
 Releases
