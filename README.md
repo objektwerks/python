@@ -19,8 +19,8 @@ Virtual Env
 4. pip3 install --upgrade pip ( optional )
 5. pip3 freeze > requirements.txt ( optional )
 
-Install
--------
+Dependencies
+------------
 1. pip3 install -r requirements.txt
 
 MyPy
