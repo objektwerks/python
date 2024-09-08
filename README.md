@@ -4,6 +4,7 @@ Survey of Python 3 features and external modules.
 
 Development
 -----------
+>Installs a Python development environment.
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.12
 3. brew install mypy
