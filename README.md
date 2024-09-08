@@ -22,7 +22,7 @@ Virtual Env
 
 Dependencies
 ------------
->Installs all dependencies listed in requirements.txt.
+>Install all dependencies listed in requirements.txt.
 1. pip3 install -r requirements.txt
 
 MyPy
