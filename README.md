@@ -2,6 +2,10 @@ Python
 ------
 Survey of Python 3 features and external modules.
 
+Python
+------
+1. Install [Homebrew](https://brew.sh/)
+
 Virtual Env
 -----------
 1. python3.12 -m venv venv
