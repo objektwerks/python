@@ -6,6 +6,7 @@ Python
 ------
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.12
+3. brew install mypy
 
 Virtual Env
 -----------
