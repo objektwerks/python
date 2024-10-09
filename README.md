@@ -6,7 +6,7 @@ Development
 -----------
 >Install a MacOS Python development environment.
 1. Install [Homebrew](https://brew.sh/)
-2. brew install python@3.12
+2. brew install python@3.13
 3. brew install mypy
 4. Install [VSCode](https://code.visualstudio.com/)
 5. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance, MyPy Type Checker
@@ -14,7 +14,7 @@ Development
 Virtual Env
 -----------
 >Setup virtual environment. See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
-1. python3.12 -m venv venv
+1. python3.13 -m venv venv
 2. source venv/bin/activate
 3. pip3 list
 4. pip3 install --upgrade pip ( optional )
@@ -33,7 +33,7 @@ MyPy
 Run
 ---
 >Replace *.py with a source file name.
-1. python3.12 ./src/*.py
+1. python3.13 ./src/*.py
 
 Releases
 --------
