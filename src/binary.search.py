@@ -21,5 +21,4 @@ def binary_search(ints: List[int], item: int):
 ints: List[int] = [1, 3, 5, 7, 9]
 
 print(f'binary search on ints {ints} for 3 == {binary_search(ints, 3)}')
-
-print(binary_search(ints, -1)) # => None
+print(f'binary search on ints {ints} for -1 == {binary_search(ints, -1)}')
