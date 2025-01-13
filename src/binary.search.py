@@ -18,5 +18,5 @@ def binary_search(ints: list[int], item: int) -> int:
 
 ints: list[int] = [1, 3, 5, 7, 9]
 
-print(f'binary search on ints {ints} for 3 equal index of: {binary_search(ints, 3)}')
-print(f'binary search on ints {ints} for 0 equal index of: {binary_search(ints, 0)}')
+print(f'binary search on ints {ints} for 3 returns an index of: {binary_search(ints, 3)}')
+print(f'binary search on ints {ints} for 0 returns an index of: {binary_search(ints, 0)}')
