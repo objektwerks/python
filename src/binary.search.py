@@ -1,18 +1,18 @@
 # binary search
 
 def binary_search(ints: list[int], item: int) -> int:
-  low = 0
-  high = len(ints) - 1
+  low: int = 0
+  high: int = len(ints) - 1
 
   while low <= high:
-    mid = (low + high) // 2
-    guess = ints[mid]
+    mid: int = (low + high) // 2
+    guess: int = ints[mid]
     if guess == item:
-        return mid
+      return mid
     elif guess > item:
-        high = mid - 1
+      high = mid - 1
     else:
-        low = mid + 1
+      low = mid + 1
 
   return -1
 
