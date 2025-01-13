@@ -1,12 +1,12 @@
 # binary search
 
-def indexof(ints: list[int], item: int) -> int:
+def indexof(items: list[int], item: int) -> int:
   low: int = 0
-  high: int = len(ints) - 1
+  high: int = len(items) - 1
 
   while low <= high:
     mid: int = (low + high) // 2
-    guess: int = ints[mid]
+    guess: int = items[mid]
     if guess == item:
       return mid
     elif guess > item:
