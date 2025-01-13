@@ -2,7 +2,7 @@
 
 from typing import List
 
-def binary_search(ints: List[int], item: int):
+def binary_search(ints: List[int], item: int) -> int:
     low = 0
     high = len(ints) - 1
 
@@ -16,9 +16,9 @@ def binary_search(ints: List[int], item: int):
         else:
             low = mid + 1
 
-    return None
+    return -1
 
 ints: List[int] = [1, 3, 5, 7, 9]
 
-print(f'binary search on ints {ints} for 3 == {binary_search(ints, 3)}')
-print(f'binary search on ints {ints} for -1 == {binary_search(ints, -1)}')
+print(f'binary search on ints {ints} for 3 equal index of: {binary_search(ints, 3)}')
+print(f'binary search on ints {ints} for 0 equal index of: {binary_search(ints, 0)}')
