@@ -17,7 +17,9 @@ def binary_search(ints: List[int], item: int):
             low = mid + 1
 
     return None
-        
+
 ints: List[int] = [1, 3, 5, 7, 9]
-print(binary_search(ints, 3)) # => 1
+
+print(f'binary search on ints {ints} for 3 == {binary_search(ints, 3)}')
+
 print(binary_search(ints, -1)) # => None
