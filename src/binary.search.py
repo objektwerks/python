@@ -1,4 +1,8 @@
-def binary_search(arr, item):
+# binary search
+
+from typing import List
+
+def binary_search(arr: List[int], item: int):
     low = 0
     high = len(arr) - 1
 
@@ -14,6 +18,6 @@ def binary_search(arr, item):
 
     return None
         
-list = [1, 3, 5, 7, 9]
+list: List[int] = [1, 3, 5, 7, 9]
 print(binary_search(list, 3)) # => 1
 print(binary_search(list, -1)) # => None
