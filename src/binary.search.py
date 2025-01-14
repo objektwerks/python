@@ -21,5 +21,5 @@ def indexof(items: list[int], item: int) -> int:
 
 ints: list[int] = [1, 3, 5, 7, 9]
 
-print(f'binary search on ints {ints} for 3 returns an index of: {indexof(ints, 3)}')
-print(f'binary search on ints {ints} for 0 returns an index of: {indexof(ints, 0)}')
+print(f'binary search on ints {ints} for indexof 3 returns an indexof: {indexof(ints, 3)}')
+print(f'binary search on ints {ints} for indexof 0 returns an indexof: {indexof(ints, 0)}')
