@@ -5,14 +5,14 @@ def indexof(items: list[int], item: int) -> int:
   highIndex: int = len(items) - 1
 
   while lowIndex <= highIndex:
-    mid: int = (lowIndex + highIndex) // 2
-    guess: int = items[mid]
+    midIndex: int = (lowIndex + highIndex) // 2
+    guess: int = items[midIndex]
     if guess == item:
-      return mid
+      return midIndex
     elif guess > item:
-      highIndex = mid - 1
+      highIndex = midIndex - 1
     else:
-      lowIndex = mid + 1
+      lowIndex = midIndex + 1
 
   return -1
 
