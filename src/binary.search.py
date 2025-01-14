@@ -8,11 +8,11 @@ def indexof(items: list[int], item: int) -> int:
 
   while lowIndex <= highIndex:
     midIndex: int = (lowIndex + highIndex) // 2
-    guessItem: int = items[midIndex]
-    if guessItem == item:
+    midIndexItem: int = items[midIndex]
+    if midIndexItem == item:
       result = midIndex
       break
-    elif guessItem > item:
+    elif midIndexItem > item:
       highIndex = midIndex - 1
     else:
       lowIndex = midIndex + 1
