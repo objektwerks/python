@@ -11,12 +11,12 @@ def findSmallestItem(items: list[int]) -> int:
 
   return firstIndex
 
-def selectionSort(items: list[int]) -> list[int]:
+def sort(items: list[int]) -> list[int]:
   newItems = []
   copyOfItems = list(items)
 
   for i in range(len(copyOfItems)):
-    smallest = findSmallestItem(copyOfItems)
-    newItems.append(copyOfItems.pop(smallest))
+    smallestItem: int = findSmallestItem(copyOfItems)
+    newItems.append( copyOfItems.pop(smallestItem) )
 
   return newItems
