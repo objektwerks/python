@@ -20,3 +20,6 @@ def sort(items: list[int]) -> list[int]:
     newItems.append( copyOfItems.pop(smallestItem) )
 
   return newItems
+
+  items: list[int] = [5, 3, 6, 2, 10]
+  sort(items)
