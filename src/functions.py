@@ -23,11 +23,3 @@ def multiply(multiplier: int) -> Callable[[int], int]:
 
 multiplier = multiply(6)
 print(f'partial to {multiplier(6)}')
-
-def factorial(n: int, acc: int = 1) -> int:
-  if n == 1:
-    return acc
-  else:
-    return factorial(n - 1, acc * n)
-
-print(f'factorial of 9 should equal 362_880 == {factorial(9)}')
