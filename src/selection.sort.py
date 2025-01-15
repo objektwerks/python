@@ -12,8 +12,8 @@ def findSmallestItem(items: list[int]) -> int:
   return firstIndex
 
 def sort(items: list[int]) -> list[int]:
-  newItems = []
-  copyOfItems = list(items)
+  newItems: list[int] = []
+  copyOfItems: list[int] = list(items)
 
   for i in range(len(copyOfItems)):
     smallestItem: int = findSmallestItem(copyOfItems)
