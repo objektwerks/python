@@ -1,5 +1,4 @@
 # selection sort
-from test.test_int import IntSubclassStrDigitLimitsTests
 
 def findSmallestItem(items: list[int]) -> int:
   firstItem: int = items[0]
