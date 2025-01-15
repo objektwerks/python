@@ -1,4 +1,5 @@
 # selection sort
+from test.test_int import IntSubclassStrDigitLimitsTests
 
 def findSmallestItem(items: list[int]) -> int:
   firstItem: int = items[0]
@@ -21,5 +22,5 @@ def sort(items: list[int]) -> list[int]:
 
   return newItems
 
-  items: list[int] = [5, 3, 6, 2, 10]
-  sort(items)
+  ints: list[int] = [5, 3, 6, 2, 10]
+  print(f'selection sort on ints {ints}: {sort(ints)}')
