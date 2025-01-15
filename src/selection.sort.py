@@ -1,6 +1,6 @@
 # selection sort
 
-def findSmallest(items: list[int]):
+def findSmallest(items: list[int]) -> int:
   firstItem = items[0]
   firstIndex = 0
 
