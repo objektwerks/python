@@ -1,12 +1,12 @@
 # selection sort
 
-def findSmallest(arr):
-  smallest = arr[0]
-  smallest_index = 0
+def findSmallest(items: list[int]):
+  firstItem = items[0]
+  firstIndex = 0
 
-  for i in range(1, len(arr)):
-    if arr[i] < smallest:
-      smallest = arr[i]
-      smallest_index = i
+  for i in range(1, len(items)):
+    if items[i] < firstItem:
+      firstItem = items[i]
+      firstIndex = i
 
-  return smallest_index
+  return firstIndex
