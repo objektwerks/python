@@ -5,9 +5,9 @@ def quicksort(items: list[int]) -> list[int]:
     return items
   else:
     pivotIndex: int = items[0]
-    less: list[int] = [i for i in items[1:] if i <= pivotIndex]
+    lesserItems: list[int] = [i for i in items[1:] if i <= pivotIndex]
     greater: list[int] = [i for i in items[1:] if i > pivotIndex]
-    return quicksort(less) + [pivotIndex] + quicksort(greater)
+    return quicksort(lesserItems) + [pivotIndex] + quicksort(greater)
 
 ints: list[int] = [10, 5, 2, 3]
 
