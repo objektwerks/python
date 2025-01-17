@@ -1,6 +1,6 @@
 # merge sort
 
-def mergesort(items: list[int]):
+def mergesort(items: list[int]) -> None:
   if len(items) > 1:
     itemsLen: int = len(items) // 2
     leftItems: list[int] = items[:itemsLen]
