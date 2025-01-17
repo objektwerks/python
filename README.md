@@ -2,6 +2,10 @@ Python
 ------
 Survey of Python 3 features and libraries, with a strong focus on using type hints.
 
+Python Library Repository
+-------------------------
+* [PyPi](https://pypi.org/)
+
 Development
 -----------
 >Install a MacOS Python development environment.
