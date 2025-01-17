@@ -34,4 +34,4 @@ def mergesort(items: list[int]) -> None:
 
 ints: list[int] = [10, 5, 2, 3]
 
-print(f'merge sort of ints {ints} sorts to: {mergesort(ints)}')
+print(f'merge sort of ints {ints} sorts in-place: {mergesort(ints)} to: {ints}')
