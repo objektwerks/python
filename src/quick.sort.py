@@ -1,6 +1,6 @@
 # quick sort
 
-def quicksort(items: list[int]):
+def quicksort(items: list[int]) -> list[int]:
   if len(items) < 2:
     return items
   else:
