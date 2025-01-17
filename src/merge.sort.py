@@ -3,29 +3,29 @@
 def mergesort(items: list[int]):
   if len(items) > 1:
     itemsLen = len(items)
-    left_half = items[:itemsLen]
-    right_half = items[itemsLen:]
+    leftItems = items[:itemsLen]
+    rightItems = items[itemsLen:]
 
-    mergesort(left_half)
-    mergesort(right_half)
+    mergesort(leftItems)
+    mergesort(rightItems)
 
     i = j = k = 0
 
-    while i < len(left_half) and j < len(right_half):
-      if left_half[i] < right_half[j]:
-          items[k] = left_half[i]
-          i += 1
+    while i < len(leftItems) and j < len(rightItems):
+      if leftItems[i] < rightItems[j]:
+        items[k] = leftItems[i]
+        i += 1
       else:
-          items[k] = right_half[j]
-          j += 1
+        items[k] = rightItems[j]
+        j += 1
       k += 1
 
-    while i < len(left_half):
-      items[k] = left_half[i]
+    while i < len(leftItems):
+      items[k] = leftItems[i]
       i += 1
       k += 1
 
-    while j < len(right_half):
-      items[k] = right_half[j]
+    while j < len(rightItems):
+      items[k] = rightItems[j]
       j += 1
       k += 1
