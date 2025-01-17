@@ -2,7 +2,7 @@ certifi==2024.7.4
 charset-normalizer==3.3.2
 Expression==5.2.0
 idna==3.7
-mypy==1.11.1
+mypy==1.14.1
 mypy-extensions==1.0.0
 requests==2.32.3
 types-requests==2.32.0.20240712
