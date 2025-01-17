@@ -9,4 +9,6 @@ def quicksort(items: list[int]):
     greater = [i for i in items[1:] if i > pivot]
     return quicksort(less) + [pivot] + quicksort(greater)
 
-print(quicksort([10, 5, 2, 3]))
+ints: list[int] = [10, 5, 2, 3]
+
+print(f'quick sort of ints {ints} sorts to: {quicksort(ints)}')
