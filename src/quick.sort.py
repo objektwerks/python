@@ -4,10 +4,10 @@ def quicksort(items: list[int]) -> list[int]:
   if len(items) < 2:
     return items
   else:
-    pivotIndex: int = items[0]
-    lesserItems: list[int] = [i for i in items[1:] if i <= pivotIndex]
-    greater: list[int] = [i for i in items[1:] if i > pivotIndex]
-    return quicksort(lesserItems) + [pivotIndex] + quicksort(greater)
+    pivotItem: int = items[0]
+    lesserItems: list[int] = [i for i in items[1:] if i <= pivotItem]
+    greaterItems: list[int] = [i for i in items[1:] if i > pivotItem]
+    return quicksort(lesserItems) + [pivotItem] + quicksort(greaterItems)
 
 ints: list[int] = [10, 5, 2, 3]
 
