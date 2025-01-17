@@ -1,6 +1,6 @@
 Python
 ------
-Survey of Python 3 features and external modules, with a strong focus on using type hints.
+Survey of Python 3 features and libraries, with a strong focus on using type hints.
 
 Development
 -----------
