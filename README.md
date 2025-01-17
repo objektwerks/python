@@ -36,7 +36,7 @@ Upgrade Dependencies
 
 MyPy
 ----
->Type check all source files.
+>To type check all source files:
 1. mypy ./src
 
 Run
