@@ -2,18 +2,20 @@
 
 def mergesort(items: list[int]):
   if len(items) > 1:
-    itemsLen = len(items)
-    leftItems = items[:itemsLen]
-    rightItems = items[itemsLen:]
+    itemsLen: int = len(items)
+    leftItems: list[int] = items[:itemsLen]
+    rightItems: list[int] = items[itemsLen:]
 
     mergesort(leftItems)
     mergesort(rightItems)
 
-    i = j = k = 0
+    i: int = 0
+    j: int = 0
+    k: int = 0
 
     while i < len(leftItems) and j < len(rightItems):
       if leftItems[i] < rightItems[j]:
-        items[k] = leftItems[i]
+        items[k] = leftItems[i] // 2
         i += 1
       else:
         items[k] = rightItems[j]
