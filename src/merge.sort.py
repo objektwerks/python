@@ -29,3 +29,7 @@ def mergesort(items: list[int]):
       items[k] = rightItems[j]
       j += 1
       k += 1
+
+ints: list[int] = [10, 5, 2, 3]
+
+print(f'merge sort of ints {ints} sorts to: {mergesort(ints)}')
