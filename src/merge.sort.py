@@ -1,13 +1,13 @@
 # merge sort
 
-def merge_sort(items: list[int]):
+def mergesort(items: list[int]):
   if len(items) > 1:
     mid = len(items) // 2
     left_half = items[:mid]
     right_half = items[mid:]
 
-    merge_sort(left_half)
-    merge_sort(right_half)
+    mergesort(left_half)
+    mergesort(right_half)
 
     i = j = k = 0
 
