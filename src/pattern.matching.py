@@ -39,9 +39,9 @@ print(f'match on {Circle(1.5)} to {matchOnCircle(circle)}')
 print(f'match on {Circle()} to {matchOnCircle(Circle())}')
 
 class Color(Enum):
-  red: int = 0
-  green: int = 1
-  blue: int = 2
+  red = 0
+  green = 1
+  blue = 2
 
 def matchOnColor(color: Color) -> str:
   match color:
