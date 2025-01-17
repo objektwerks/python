@@ -30,7 +30,7 @@ class Circle:
 
 def matchOnCircle(circle: Circle) -> str:
   match circle:
-    case Circle(radius) if radius < 0.0: return f'a diameter of 0.0'
+    case Circle(radius) if radius < 0.0: return 'a diameter of 0.0'
     case Circle(radius): return f'a diameter of {radius * 2}'
     case _: return 'unknown'
 
