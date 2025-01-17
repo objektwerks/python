@@ -24,15 +24,15 @@ Virtual Env
 4. pip3 install --upgrade pip ( optional )
 5. pip3 freeze > requirements.txt ( optional )
 
-Upgrade
--------
->To upgrade dependencies requirements.txt:
-1. pip install --upgrade -r requirements.txt
-
-Dependencies
-------------
->Install all dependencies listed in requirements.txt.
+Install Dependencies
+--------------------
+>To install dependencies in requirements.txt.
 1. pip3 install -r requirements.txt
+
+Upgrade Dependencies
+--------------------
+>To upgrade dependencies in requirements.txt:
+1. pip install --upgrade -r requirements.txt
 
 MyPy
 ----
