@@ -2,10 +2,6 @@ Python
 ------
 Survey of Python 3 features and libraries, with a strong focus on using type hints.
 
-Python Library Repository
--------------------------
-* [PyPi](https://pypi.org/)
-
 Development
 -----------
 >Install a MacOS Python development environment.
@@ -23,6 +19,10 @@ Virtual Env
 3. pip3 list
 4. pip3 install --upgrade pip ( optional )
 5. pip3 freeze > requirements.txt ( optional )
+
+Python Repository
+-----------------
+* [PyPi](https://pypi.org/)
 
 Install Dependencies
 --------------------
