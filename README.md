@@ -46,10 +46,10 @@ Run
 
 Releases
 --------
-1. Initial Release [2024.8.7]
-2. Explored Expression Library [2024.8.8]
-3. Enhanced Project ( files.dirs, exceptions, http.requests ) [2024.8.16]
-4. Added binary search, merge sort, quick sort, recursion and selection sort. [2025.1.17]
+1. [2024.8.7] Initial Release
+2. [2024.8.8] Explored Expression Library
+3. [2024.8.16] Enhanced Project ( files.dirs, exceptions, http.requests )
+4. [2025.1.17] Added binary search, merge sort, quick sort, recursion and selection sort.
 
 Resources
 ---------
