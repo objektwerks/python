@@ -65,7 +65,10 @@ graph: dict[int, list[int]] = {
 }
 
 def isEven(number: int) -> bool:
-  return True if number % 2 == 0 else False
+  return True if number % 2 == 0 else
+
+def square(number: int) -> int:
+  return number * number
 
 print(f'graph {graph}')
 print(f'traverse graph in this order: {traverse(graph, 1)}')
