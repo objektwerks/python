@@ -42,8 +42,7 @@ def transform(graph: dict[int, list[int]], start: int, transformer: Callable[[in
   while queue:
     node: int = queue.popleft()
     visited.append(node)
-    if transformer(node) == True:
-      transformed.append(node)
+    transformed.append( transformer(node) )
 
     for child in graph[node]:
       if child not in visited and child not in queue:
@@ -65,7 +64,7 @@ graph: dict[int, list[int]] = {
 }
 
 def isEven(number: int) -> bool:
-  return True if number % 2 == 0 else
+  return True if number % 2 == 0 else False
 
 def square(number: int) -> int:
   return number * number
