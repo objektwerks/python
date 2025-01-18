@@ -2,7 +2,21 @@
 
 from collections import deque
 
-def breadthFirstSearch(map: dict[int, list[int]], start: int) -> list[int]:
+def traverse(map: dict[int, list[int]], start: int) -> list[int]:
+  queue: deque[int] = deque([start])
+  visited: list[int] = []
+
+  while queue:
+    node: int = queue.popleft()
+    visited.append(node)
+
+    for child in map[node]:
+      if child not in visited and child not in queue:
+        queue.append(child)
+
+  return visited
+
+def filter(map: dict[int, list[int]], start: int, filter) -> list[int]:
   queue: deque[int] = deque([start])
   visited: list[int] = []
 
@@ -29,4 +43,4 @@ map: dict[int, list[int]] = {
   10: [1]
 }
 
-print(f'breadth first search of {map} travserse in this order: {breadthFirstSearch(map, 1)}')
+print(f'traverse map {map} in this order: {traverse(map, 1)}')
