@@ -17,7 +17,7 @@ def traverse(map: dict[int, list[int]], start: int) -> list[int]:
 
   return visited
 
-def filter(map: dict[int, list[int]], start: int, filter: Callable[[int], int]) -> list[int]:
+def filter(map: dict[int, list[int]], start: int, filter: Callable[[int], bool]) -> list[int]:
   queue: deque[int] = deque([start])
   visited: list[int] = []
   filtered: list[int] = []
@@ -25,7 +25,7 @@ def filter(map: dict[int, list[int]], start: int, filter: Callable[[int], int]) 
   while queue:
     node: int = queue.popleft()
     visited.append(node)
-    if filter(node) == 0:
+    if filter(node) == True:
       filtered.append(node)
 
     for child in map[node]:
@@ -47,7 +47,7 @@ map: dict[int, list[int]] = {
   10: [1]
 }
 
-def isEven(number: int) -> int:
-    return 0 if number % 2 == 0 else -1
+def isEven(number: int) -> bool:
+    return True if number % 2 == 0 else False
 
 print(f'traverse map {map} in this order: {traverse(map, 1)}')
