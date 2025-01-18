@@ -16,11 +16,17 @@ def breadthFirstSearch(map: dict[int, list[int]], start: int) -> list[int]:
 
   return visited
 
-map = {
-    1: [2, 3, 4, 5],
-    2: [6, 7],
-    3: [8],
-    4: [9]
+map: dict[int, list[int]] = {
+  1: [2, 3, 4, 5],
+  2: [6, 7],
+  3: [8],
+  4: [9],
+  5: [],
+  6: [],
+  7: [10],
+  8: [],
+  9: [],
+  10: [1]
 }
 
 print(f'breadth first search of {map} travserse in this order: {breadthFirstSearch(map, 1)}')
