@@ -34,7 +34,7 @@ def filter(map: dict[int, list[int]], start: int, filter: Callable[[int], bool])
 
   return filtered
 
-map: dict[int, list[int]] = {
+graph: dict[int, list[int]] = {
   1: [2, 3, 4, 5],
   2: [6, 7],
   3: [8],
@@ -50,5 +50,5 @@ map: dict[int, list[int]] = {
 def isEven(number: int) -> bool:
   return True if number % 2 == 0 else False
 
-print(f'traverse map {map} in this order: {traverse(map, 1)}')
-print(f'filter map {map} with this filter {isEven}: {filter(map, 1, isEven)}')
+print(f'traverse graph {graph} in this order: {traverse(graph, 1)}')
+print(f'filter graph {graph} with this filter {isEven}: {filter(graph, 1, isEven)}')
