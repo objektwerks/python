@@ -2,12 +2,12 @@
 
 from collections import deque
 
-def breadthFirstSearch(map: dict[int, list[int]], start: int):
-  queue = deque([start])
-  visited = []
+def breadthFirstSearch(map: dict[int, list[int]], start: int) -> list[int]:
+  queue: deque[int] = deque([start])
+  visited: list[int] = []
 
   while queue:
-    node = queue.popleft()
+    node: int = queue.popleft()
     visited.append(node)
 
     for child in map[node]:
