@@ -72,4 +72,4 @@ def square(number: int) -> int:
 print(f'graph {graph}')
 print(f'traverse graph in this order: {traverse(graph, 1)}')
 print(f'filter graph with this filter {isEven}: {filter(graph, 1, isEven)}')
-print(f'transform graph with this transformer {square}: {transform(graph, 1, square)}')
+print(f'transform graph with this transformer {square.__name__}: {transform(graph, 1, square)}')
