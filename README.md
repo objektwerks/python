@@ -32,7 +32,7 @@ Install Dependencies
 Upgrade Dependencies
 --------------------
 >To upgrade dependencies in requirements.txt:
-1. pip install --upgrade -r requirements.txt
+1. pip3 install --upgrade -r requirements.txt
 
 MyPy
 ----
