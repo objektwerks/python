@@ -3,7 +3,7 @@
 from collections import deque
 from typing import Callable
 
-def traverse(map: dict[int, list[int]], start: int) -> list[int]:
+def traverse(graph: dict[int, list[int]], start: int) -> list[int]:
   queue: deque[int] = deque([start])
   visited: list[int] = []
 
@@ -11,13 +11,13 @@ def traverse(map: dict[int, list[int]], start: int) -> list[int]:
     node: int = queue.popleft()
     visited.append(node)
 
-    for child in map[node]:
+    for child in graph[node]:
       if child not in visited and child not in queue:
         queue.append(child)
 
   return visited
 
-def filter(map: dict[int, list[int]], start: int, filter: Callable[[int], bool]) -> list[int]:
+def filter(graph: dict[int, list[int]], start: int, filter: Callable[[int], bool]) -> list[int]:
   queue: deque[int] = deque([start])
   visited: list[int] = []
   filtered: list[int] = []
@@ -28,7 +28,7 @@ def filter(map: dict[int, list[int]], start: int, filter: Callable[[int], bool])
     if filter(node) == True:
       filtered.append(node)
 
-    for child in map[node]:
+    for child in graph[node]:
       if child not in visited and child not in queue:
         queue.append(child)
 
