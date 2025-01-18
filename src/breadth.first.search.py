@@ -34,6 +34,23 @@ def filter(graph: dict[int, list[int]], start: int, filter: Callable[[int], bool
 
   return filtered
 
+def transform(graph: dict[int, list[int]], start: int, transformer: Callable[[int], int]) -> list[int]:
+  queue: deque[int] = deque([start])
+  visited: list[int] = []
+  transformed: list[int] = []
+
+  while queue:
+    node: int = queue.popleft()
+    visited.append(node)
+    if transformer(node) == True:
+      transformed.append(node)
+
+    for child in graph[node]:
+      if child not in visited and child not in queue:
+        queue.append(child)
+
+  return transformed
+
 graph: dict[int, list[int]] = {
   1: [2, 3, 4, 5],
   2: [6, 7],
