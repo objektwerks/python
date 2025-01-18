@@ -51,3 +51,4 @@ def isEven(number: int) -> bool:
   return True if number % 2 == 0 else False
 
 print(f'traverse map {map} in this order: {traverse(map, 1)}')
+print(f'filter map {map} with this filter {isEven}: {filter(map, 1, isEven)}')
