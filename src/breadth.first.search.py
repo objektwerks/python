@@ -22,3 +22,5 @@ map = {
     3: [8],
     4: [9]
 }
+
+print(f'breadth first search of {map} travserse in this order: {breadthFirstSearch(map, 1)}')
