@@ -48,6 +48,6 @@ map: dict[int, list[int]] = {
 }
 
 def isEven(number: int) -> bool:
-    return True if number % 2 == 0 else False
+  return True if number % 2 == 0 else False
 
 print(f'traverse map {map} in this order: {traverse(map, 1)}')
