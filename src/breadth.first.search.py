@@ -15,3 +15,10 @@ def breadthFirstSearch(map: dict[int, list[int]], start: int):
         queue.append(child)
 
   return visited
+
+map = {
+    1: [2, 3, 4, 5],
+    2: [6, 7],
+    3: [8],
+    4: [9]
+}
