@@ -50,5 +50,6 @@ graph: dict[int, list[int]] = {
 def isEven(number: int) -> bool:
   return True if number % 2 == 0 else False
 
-print(f'traverse graph {graph} in this order: {traverse(graph, 1)}')
-print(f'filter graph {graph} with this filter {isEven}: {filter(graph, 1, isEven)}')
+print(f'graph {graph}')
+print(f'traverse graph in this order: {traverse(graph, 1)}')
+print(f'filter graph with this filter {isEven}: {filter(graph, 1, isEven)}')
