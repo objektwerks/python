@@ -50,6 +50,7 @@ Releases
 2. [2024.8.8] Explored Expression Library
 3. [2024.8.16] Enhanced Project ( files.dirs, exceptions, http.requests )
 4. [2025.1.17] Added binary search, merge sort, quick sort, recursion and selection sort.
+5. [2025.1.18] Added breath first search.
 
 Resources
 ---------
