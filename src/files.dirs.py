@@ -1,5 +1,6 @@
 # files and dirs
 
+from collections import deque
 import os
 
 with open('requirements.txt', 'r') as f:
@@ -19,3 +20,18 @@ for entry in os.listdir(rootpath):
 
 os.remove('test.txt')
 print('\nremove: text.txt\n')
+
+def traverse(rootDir: str):
+  searchQueue = deque()
+  searchQueue.append(rootDir)
+
+  while searchQueue:
+    dir: str = searchQueue.popleft()
+    for file in sorted( os.listdir(dir) ):
+      path: str = os.path.join(dir, file)
+      if os.path.isfile(path):
+        print(file)
+      else:
+        searchQueue.append(path)
+
+traverse(rootpath)
