@@ -36,3 +36,14 @@ def traverse(rootdir: str):
         queue.append(path)
 
 traverse("./src")
+
+# depth first search
+def recurse(rootdir: str):
+  for file in sorted( os.listdir(rootdir) ):
+    path = os.path.join(rootdir, file)
+    if os.path.isfile(path):
+      print(file)
+    else:
+      recurse(path)
+
+recurse("./src")
