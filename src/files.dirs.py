@@ -34,4 +34,4 @@ def traverse(rootDir: str):
       else:
         searchQueue.append(path)
 
-traverse(rootpath)
+traverse("./src")
