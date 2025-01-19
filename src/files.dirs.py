@@ -22,18 +22,20 @@ os.remove('test.txt')
 print('\nremove: text.txt\n')
 
 # breadth first search
-def traverse(rootdir: str):
-  queue = deque()
+def traverse(rootdir: str) -> list[str]:
+  queue: deque[str] = deque()
   queue.append(rootdir)
+  files: list[str] = []
 
   while queue:
     dir: str = queue.popleft()
     for file in sorted( os.listdir(dir) ):
       path: str = os.path.join(dir, file)
       if os.path.isfile(path):
-        print(file)
+        files.append(file)
       else:
         queue.append(path)
+  return files
 
 print("traverse:")
 traverse("./src")
