@@ -38,7 +38,8 @@ def traverse(rootdir: str) -> list[str]:
   return files
 
 print("traverse:")
-traverse("./src")
+for file in traverse("./src"):
+  print(file)
 
 # depth first search
 def recurse(rootdir: str):
