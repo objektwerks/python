@@ -51,6 +51,7 @@ Releases
 3. [2024.8.16] Enhanced Project ( files.dirs, exceptions, http.requests )
 4. [2025.1.17] Added binary search, merge sort, quick sort, recursion and selection sort.
 5. [2025.1.18] Added breadth first search.
+6. [2025.1.19] Added depth first search.
 
 Resources
 ---------
