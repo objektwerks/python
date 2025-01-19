@@ -35,6 +35,7 @@ def traverse(rootdir: str):
       else:
         queue.append(path)
 
+print("traverse:")
 traverse("./src")
 
 # depth first search
@@ -46,4 +47,5 @@ def recurse(rootdir: str):
     else:
       recurse(path)
 
+print("recurse:")
 recurse("./src")
