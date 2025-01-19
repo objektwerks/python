@@ -21,6 +21,7 @@ for entry in os.listdir(rootpath):
 os.remove('test.txt')
 print('\nremove: text.txt\n')
 
+# breadth first search
 def traverse(rootdir: str):
   queue = deque()
   queue.append(rootdir)
