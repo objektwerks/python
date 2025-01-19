@@ -42,13 +42,16 @@ for file in traverse("./src"):
   print(file)
 
 # depth first search
-def recurse(rootdir: str):
+def recurse(rootdir: str) -> list[str]:
+  files: list[str] = []
   for file in sorted( os.listdir(rootdir) ):
     path = os.path.join(rootdir, file)
     if os.path.isfile(path):
-      print(file)
+      files.append(file)
     else:
       recurse(path)
+  return files
 
 print("recurse:")
-recurse("./src")
+for file in recurse("./src"):
+  print(file)
