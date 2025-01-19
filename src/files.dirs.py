@@ -21,17 +21,17 @@ for entry in os.listdir(rootpath):
 os.remove('test.txt')
 print('\nremove: text.txt\n')
 
-def traverse(rootDir: str):
-  traverseQueue = deque()
-  traverseQueue.append(rootDir)
+def traverse(rootdir: str):
+  queue = deque()
+  queue.append(rootdir)
 
-  while traverseQueue:
-    dir: str = traverseQueue.popleft()
+  while queue:
+    dir: str = queue.popleft()
     for file in sorted( os.listdir(dir) ):
       path: str = os.path.join(dir, file)
       if os.path.isfile(path):
         print(file)
       else:
-        traverseQueue.append(path)
+        queue.append(path)
 
 traverse("./src")
