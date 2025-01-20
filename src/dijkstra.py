@@ -20,8 +20,7 @@ class Node:
   parent: Optional[str] = None
   finished: bool = False
 
-def findShortestPath(graph: dict[str, dict[str, float]],
-                     source: str) -> tuple[dict[str, float], dict[str, str | None]]:
+def findShortestPaths(graph: dict[str, dict[str, float]], source: str) -> dict[str, float]:
     nodes: dict[str, Node] = {node: Node(0, 0) for node in graph}
     nodes[source].distance = 0
     queue: list[tuple[float, str]] = [ (0, source) ]
@@ -41,9 +40,9 @@ def findShortestPath(graph: dict[str, dict[str, float]],
           nodes[neighbor].parent = node
           heapq.heappush(queue, (newDistance, neighbor))
 
-    shortestPath: dict[str, float] = {node: nodes[node].distance for node in nodes}
-    previousNodes: dict[str, str | None] = {node: nodes[node].parent for node in nodes}
+    shortestPaths: dict[str, float] = {node: nodes[node].distance for node in nodes}
 
-    return (shortestPath, previousNodes)
+    return shortestPaths
 
-print( findShortestPath(graph, "b") )
+print(f'graph {graph}')
+print(f'dijkstra find shortest path for [s]: {findShortestPaths(graph, "s")}')
