@@ -45,4 +45,4 @@ def findShortestPaths(graph: dict[str, dict[str, float]], source: str) -> dict[s
     return shortestPaths
 
 print(f'graph {graph}')
-print(f'dijkstra find shortest paths for [s]: {findShortestPaths(graph, "s")}')
+print(f'find shortest paths: {findShortestPaths(graph, "s")}')
