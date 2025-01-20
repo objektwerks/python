@@ -91,5 +91,4 @@ def files(rootdir: str) -> list[str]:
   return files
 
 print("files:")
-for file in files("./src"):
-  print(file)
+print( '\n'.join( files("./src") ) )
