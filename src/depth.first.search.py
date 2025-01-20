@@ -13,4 +13,4 @@ def recurse(rootdir: str) -> list[str]:
   return files
 
 print("recurse:")
-print('\n'.join( recurse("./src") ))
+print( '\n'.join( recurse("./src") ) )
