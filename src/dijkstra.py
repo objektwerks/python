@@ -21,7 +21,7 @@ class Node:
   finished: bool = False
 
 def dijkstra(graph: dict[str, dict[str, float]],
-             source: str) -> tuple[dict[str, float], dict[str, str]]:
+             source: str) -> tuple[dict[str, float], dict[str, str | None]]:
     nodes: dict[str, Node] = {node: Node(0, 0) for node in graph}
     nodes[source].distance = 0
     queue: list[tuple[float, str]] = [ (0, source) ]
@@ -42,6 +42,6 @@ def dijkstra(graph: dict[str, dict[str, float]],
           heapq.heappush(queue, (newDistance, neighbor))
 
     shortestPath: dict[str, float] = {node: nodes[node].distance for node in nodes}
-    previousNodes: dict[str, str] = {node: nodes[node].parent for node in nodes}
+    previousNodes: dict[str, str | None] = {node: nodes[node].parent for node in nodes}
 
     return shortestPath, previousNodes
