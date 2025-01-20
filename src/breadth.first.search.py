@@ -1,6 +1,7 @@
 # breadth first search
 
 from collections import deque
+import os
 from typing import Callable
 
 def traverse(graph: dict[int, list[int]], start: int) -> list[int]:
@@ -73,3 +74,22 @@ print(f'graph {graph}')
 print(f'traverse graph in this order: {traverse(graph, 1)}')
 print(f'filter graph with the [{isEven.__name__}] filter: {filter(graph, 1, isEven)}')
 print(f'transform graph with the [{square.__name__}] transformer: {transform(graph, 1, square)}')
+
+def files(rootdir: str) -> list[str]:
+  queue: deque[str] = deque()
+  queue.append(rootdir)
+  files: list[str] = []
+
+  while queue:
+    dir: str = queue.popleft()
+    for file in sorted( os.listdir(dir) ):
+      path: str = os.path.join(dir, file)
+      if os.path.isfile(path):
+        files.append(file)
+      else:
+        queue.append(path)
+  return files
+
+print("traverse:")
+for file in files("./src"):
+  print(file)
