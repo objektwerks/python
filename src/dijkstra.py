@@ -1,6 +1,6 @@
 # dijkstra's algo
 
-graph = {
+graph: dict[str, dict[str, int]] = {
   's':{'a':8, 'b':4},
   'a':{'b':4},
   'b':{'a':3, 'c':2, 'd':5},
