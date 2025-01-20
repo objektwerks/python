@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import heapq
 from typing import Optional
 
-graph: dict[str, dict[str, int]] = {
+graph: dict[str, dict[str, float]] = {
   's': {'a':8, 'b':4},
   'a': {'b':4},
   'b': {'a':3, 'c':2, 'd':5},
@@ -45,3 +45,5 @@ def findShortestPath(graph: dict[str, dict[str, float]],
     previousNodes: dict[str, str | None] = {node: nodes[node].parent for node in nodes}
 
     return (shortestPath, previousNodes)
+
+print( findShortestPath(graph, "b") )
