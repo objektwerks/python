@@ -1,5 +1,4 @@
 # files and dirs
-# note breadth first search and depth first search below
 
 from collections import deque
 import os
