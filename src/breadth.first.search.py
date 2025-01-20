@@ -1,5 +1,4 @@
 # breadth first search
-# see files.dirs.py for more
 
 from collections import deque
 from typing import Callable
