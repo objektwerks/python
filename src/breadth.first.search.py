@@ -90,6 +90,6 @@ def files(rootdir: str) -> list[str]:
         queue.append(path)
   return files
 
-print("traverse:")
+print("files:")
 for file in files("./src"):
   print(file)
