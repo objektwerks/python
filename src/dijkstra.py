@@ -41,7 +41,7 @@ def dijkstra(graph: dict[str, dict[str, float]],
           nodes[neighbor].parent = node
           heapq.heappush(queue, (newDistance, neighbor))
 
-    shortest_path: dict[str, float] = {node: nodes[node].distance for node in nodes}
-    previous_nodes: dict[str, str] = {node: nodes[node].parent for node in nodes}
+    shortestPath: dict[str, float] = {node: nodes[node].distance for node in nodes}
+    previousNodes: dict[str, str] = {node: nodes[node].parent for node in nodes}
 
-    return shortest_path, previous_nodes
+    return shortestPath, previousNodes
