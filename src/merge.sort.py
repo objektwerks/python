@@ -33,6 +33,5 @@ def mergesort(items: list[int]) -> None:
       k += 1
 
 ints: list[int] = [10, 5, 2, 3]
-
 mergesort(ints)
 print(f'merge sort of ints {ints} sorts in-place to: {ints}')
