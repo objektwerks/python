@@ -8,8 +8,8 @@ def selectionSort(items: list[int]) -> list[int]:
     for j in range(i + 1, len(items)):
       if items[j] < items[lowestNumberIndex]:
         lowestNumberIndex = j
-      if lowestNumberIndex != i:
-        items[i], items[lowestNumberIndex] = items[lowestNumberIndex], items[i]
+    if lowestNumberIndex != i:
+      items[i], items[lowestNumberIndex] = items[lowestNumberIndex], items[i]
     
   return items
 
