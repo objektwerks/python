@@ -51,6 +51,7 @@ Big O
 3. O(N) - linear time
 4. O(N2) - quadratic time
 5. O(2^n) - exponential time
+6. O(n!) - factorial time
 
 Releases
 --------
