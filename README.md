@@ -46,12 +46,12 @@ Run
 
 Big O
 -----
-1. O(1) - constant time
+1. O(1)     - constant time
 2. O(log N) - logarithmic time
-3. O(N) - linear time
-4. O(N2) - quadratic time
-5. O(2^n) - exponential time
-6. O(n!) - factorial time
+3. O(N)     - linear time
+4. O(N2)    - quadratic time
+5. O(2^n)   - exponential time
+6. O(n!)    - factorial time
 
 Releases
 --------
