@@ -1,4 +1,4 @@
-# dijkstra's algo
+# dijkstra's algo - O((v + e) log v)
 
 from dataclasses import dataclass
 import heapq
