@@ -50,6 +50,7 @@ Big O
 2. O(log N) - logarithmic time
 3. O(N) - linear time
 4. O(N2) - quadratic time
+5. O(2^n) - exponential time
 
 Releases
 --------
