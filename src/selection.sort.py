@@ -12,14 +12,14 @@ def findSmallestItemIndex(items: list[int]) -> int:
   return findIndex
 
 def selectionSort(items: list[int]) -> list[int]:
-  newItems: list[int] = []
+  sortedItems: list[int] = []
   copyOfItems: list[int] = list(items)
 
   for i in range(len(copyOfItems)):
-    smallestItem: int = findSmallestItemIndex(copyOfItems)
-    newItems.append( copyOfItems.pop(smallestItem) )
+    smallestItemIndex: int = findSmallestItemIndex(copyOfItems)
+    sortedItems.append( copyOfItems.pop(smallestItemIndex) )
 
-  return newItems
+  return sortedItems
 
 ints: list[int] = [5, 3, 6, 2, 10]
 print(f'selection sort on ints {ints} to: {selectionSort(ints)}')
