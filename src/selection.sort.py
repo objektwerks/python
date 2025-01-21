@@ -1,4 +1,4 @@
-# selection sort
+# selection sort - O(n^2)
 
 def findSmallestItem(items: list[int]) -> int:
   firstItem: int = items[0]
