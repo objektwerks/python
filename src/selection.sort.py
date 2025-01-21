@@ -1,6 +1,6 @@
 # selection sort - O(n^2)
 
-def findSmallestItem(items: list[int]) -> int:
+def findSmallestItemIndex(items: list[int]) -> int:
   firstItem: int = items[0]
   firstIndex: int = 0
 
@@ -16,7 +16,7 @@ def selectionSort(items: list[int]) -> list[int]:
   copyOfItems: list[int] = list(items)
 
   for i in range(len(copyOfItems)):
-    smallestItem: int = findSmallestItem(copyOfItems)
+    smallestItem: int = findSmallestItemIndex(copyOfItems)
     newItems.append( copyOfItems.pop(smallestItem) )
 
   return newItems
