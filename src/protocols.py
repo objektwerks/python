@@ -15,7 +15,7 @@ class Cat(Animal):
     return 'meow'
   
 def speak(animal: Animal) -> str:
-    return animal.speak()
+  return animal.speak()
   
 print(f'Bear speak - {Bear().speak()}')
 print(f'Cat speak - {Cat().speak()}')
