@@ -1,6 +1,6 @@
 # bubble sort
 
-def bubbleSort(items: list[int]):
+def bubblesort(items: list[int]):
   unsortedUntilIndex = len(items) - 1
   sorted = False
 
@@ -15,4 +15,4 @@ def bubbleSort(items: list[int]):
   return items
 
 ints: list[int] = [3, 2, 1]
-print(f'bubble sort on ints {ints} yields: {bubbleSort(ints)}')
+print(f'bubble sort on ints {ints} yields: {bubblesort(ints)}')
