@@ -1,8 +1,8 @@
 # bubble sort
 
 def bubblesort(items: list[int]) -> list[int]:
-  unsortedUntilIndex = len(items) - 1
-  sorted = False
+  unsortedUntilIndex: int = len(items) - 1
+  sorted: bool = False
 
   while not sorted:
     sorted = True
