@@ -1,6 +1,6 @@
 # expression - functional programming library
 
-from expression import Nothing, Ok, Result, compose, curry, effect, pipe, Some, Option, Failure, Success, Try
+from expression import Nothing, Ok, compose, curry, effect, pipe, Some, Option, Failure, Success, Try
 from expression.collections import seq, Seq
 from typing import Callable, Generator
 
@@ -65,16 +65,22 @@ def divide(dividend: int, divisor: int) -> Try[float]:
 
 def validate(dividend: int, divisor: int) -> float:
   match divide(dividend, divisor):
-    case Try(tag="ok", ok=ok): return float(ok)
-    case Try(error=error): return 0
+    case Try(tag="ok", ok=ok):
+      return float(ok)
+    case Try(error=error):
+      print(error)
+      return 0
 
 print(f'try 4 / 2 should equal 2: {validate(4, 2) == 2}')
 print(f'try 4 / 0 should equal 0: {validate(4, 0) == 0}')
 
 def check(dividend: int, divisor: int) -> Option[float]:
   match divide(dividend, divisor):
-    case Try(tag="ok", ok=ok): return Some(ok)
-    case Try(error=error): return Nothing
+    case Try(tag="ok", ok=ok):
+      return Some(ok)
+    case Try(error=error):
+      print(error)
+      return Nothing
 
 print(f'option 4 / 2 should equal 2: {check(4, 2) == Some(2)}')
 print(f'option 4 / 0 should equal 0: {check(4, 0) == Nothing}')
