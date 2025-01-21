@@ -1,6 +1,5 @@
 # selections sort x - O(n^2)
 
-
 def selectionSort(items: list[int]) -> None:
   for i in range(len(items) - 1):
     lowestNumberIndex = i
@@ -15,4 +14,4 @@ def selectionSort(items: list[int]) -> None:
 
 ints: list[int] = [5, 3, 6, 2, 10]
 selectionSort(ints)
-print(f'selection sort on ints {ints} to: {ints}')
+print(f'selection sort on ints {[5, 3, 6, 2, 10]} to: {ints}')
