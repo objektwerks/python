@@ -1,13 +1,13 @@
 # merge sort - O(log n)
 
-def mergesort(items: list[int]) -> None:
+def mergeSort(items: list[int]) -> None:
   if len(items) > 1:
     itemsLen: int = len(items) // 2
     leftItems: list[int] = items[:itemsLen]
     rightItems: list[int] = items[itemsLen:]
 
-    mergesort(leftItems)
-    mergesort(rightItems)
+    mergeSort(leftItems)
+    mergeSort(rightItems)
 
     i: int = 0
     j: int = 0
@@ -33,5 +33,5 @@ def mergesort(items: list[int]) -> None:
       k += 1
 
 ints: list[int] = [10, 5, 2, 3]
-mergesort(ints)
+mergeSort(ints)
 print(f'merge sort of ints {ints} sorts in-place to: {ints}')

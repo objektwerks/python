@@ -1,6 +1,6 @@
 # bubble sort - O(n^2)
 
-def bubblesort(items: list[int]) -> list[int]:
+def bubleSort(items: list[int]) -> list[int]:
   lastUnsortedIndex: int = len(items) - 1
   sorted: bool = False
 
@@ -15,4 +15,4 @@ def bubblesort(items: list[int]) -> list[int]:
   return items
 
 ints: list[int] = [3, 2, 1]
-print(f'bubble sort on ints {ints} yields: {bubblesort(ints)}')
+print(f'bubble sort on ints {ints} yields: {bubleSort(ints)}')
