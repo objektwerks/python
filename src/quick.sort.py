@@ -10,5 +10,4 @@ def quicksort(items: list[int]) -> list[int]:
     return quicksort(lesserItems) + [pivotItem] + quicksort(greaterItems)
 
 ints: list[int] = [10, 5, 2, 3]
-
 print(f'quick sort of ints {ints} sorts to: {quicksort(ints)}')
