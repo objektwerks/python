@@ -64,6 +64,7 @@ Releases
 7. [2025.1.20] Added Dijstra's algo.
 8. [2025.1.21] Added bubble sort.
 9. [2025.1.21] Added insertion sort.
+10. [2025.1.21] Adde queue and stack.
 
 Resources
 ---------
