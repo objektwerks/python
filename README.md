@@ -53,6 +53,7 @@ Releases
 5. [2025.1.18] Added breadth first search.
 6. [2025.1.19] Added depth first search.
 7. [2025.1.20] Added Dijstra's algo.
+8. [2025.1.21] Added bubble sort.
 
 Resources
 ---------
