@@ -1,8 +1,9 @@
 # bubble sort
 
-def bubble_sort(array):
+def sort(array):
   unsorted_until_index = len(array) - 1
   sorted = False
+
   while not sorted:
     sorted = True
     for i in range(unsorted_until_index):
@@ -10,4 +11,5 @@ def bubble_sort(array):
         array[i], array[i+1] = array[i+1], array[i]
         sorted = False
     unsorted_until_index -= 1
+
   return array
