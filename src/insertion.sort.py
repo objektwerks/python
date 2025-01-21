@@ -1,6 +1,6 @@
 # insertion sort - O(log n)
 
-def insertion_sort(items: list[int]) -> None:
+def insertionSort(items: list[int]) -> None:
   for index in range(1, len(items)):
     currentItem = items[index]
     currentItemIndex = index - 1
@@ -15,3 +15,7 @@ def insertion_sort(items: list[int]) -> None:
     items[currentItemIndex + 1] = currentItem
     
   return None
+
+ints: list[int] = [5, 3, 6, 2, 10]
+insertionSort(ints)
+print(f'insertion sort on ints {[5, 3, 6, 2, 10]} to: {ints}')
