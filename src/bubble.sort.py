@@ -1,15 +1,15 @@
 # bubble sort
 
-def sort(array):
-  unsortedUntilIndex = len(array) - 1
+def sort(items: list[int]):
+  unsortedUntilIndex = len(items) - 1
   sorted = False
 
   while not sorted:
     sorted = True
     for i in range(unsortedUntilIndex):
-      if array[i] > array[i + 1]:
-        array[i], array[i + 1] = array[i + 1], array[i]
+      if items[i] > items[i + 1]:
+        items[i], items[i + 1] = items[i + 1], items[i]
         sorted = False
     unsortedUntilIndex -= 1
 
-  return array
+  return items
