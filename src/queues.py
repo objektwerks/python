@@ -15,3 +15,13 @@ class Queue:
     
   def len(self) -> int:
     return len(self.data)
+  
+ints: Queue = Queue()
+ints.enqueue(1)
+ints.enqueue(2)
+ints.enqueue(3)
+print(f'queue enqueue [1, 2, 3] equal len of: {ints.len()}')
+ints.dequeue()
+ints.dequeue()
+ints.dequeue()
+print(f'queue dequeue [1, 2, 3] equal len of: {ints.len()}')
