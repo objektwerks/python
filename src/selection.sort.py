@@ -1,15 +1,15 @@
 # selection sort - O(n^2)
 
 def findSmallestItemIndex(items: list[int]) -> int:
-  firstItem: int = items[0]
-  firstIndex: int = 0
+  findItem: int = items[0]
+  findIndex: int = 0
 
   for index in range(1, len(items)):
-    if items[index] < firstItem:
-      firstItem = items[index]
-      firstIndex = index
+    if items[index] < findItem:
+      findItem = items[index]
+      findIndex = index
 
-  return firstIndex
+  return findIndex
 
 def selectionSort(items: list[int]) -> list[int]:
   newItems: list[int] = []
