@@ -1,17 +1,17 @@
 # insertion sort - O(log n)
 
-def insertion_sort(array):
-  for index in range(1, len(array)):
-      
-    temp_value = array[index]
-    position = index - 1
-    while position >= 0:
-      if array[position] > temp_value:
-        array[position + 1] = array[position]
-        position = position - 1
+def insertion_sort(items: list[int]) -> None:
+  for index in range(1, len(items)):
+    currentItem = items[index]
+    currentItemIndex = index - 1
+
+    while currentItemIndex >= 0:
+      if items[currentItemIndex] > currentItem:
+        items[currentItemIndex + 1] = items[currentItemIndex]
+        currentItemIndex = currentItemIndex - 1
       else:
         break
     
-    array[position + 1] = temp_value
+    items[currentItemIndex + 1] = currentItem
     
-  return array
+  return None
