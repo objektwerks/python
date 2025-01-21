@@ -44,6 +44,13 @@ Run
 >Replace *.py with a source file name.
 1. python3.13 ./src/*.py
 
+Big O
+-----
+1. O(1) - constant time
+2. O(log N) - logarithmic time
+3. O(N) - linear time
+4. O(N2) - quadratic time
+
 Releases
 --------
 1. [2024.8.7] Initial Release
