@@ -13,8 +13,8 @@ class Stack:
     else:
       return None
     
-  def read(self) -> int | None:
-    if len(self.data) > 0:
-      return self.data[-1]
-    else:
-      return None
+ints: Stack = Stack()
+ints.push(1)
+ints.push(2)
+ints.push(3)
+print(f'stack push [1, 2, 3]: {ints}')
