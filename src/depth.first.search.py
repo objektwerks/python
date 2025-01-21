@@ -1,4 +1,4 @@
-# depth first search - O(v + e
+# depth first search - O(v + e)
 
 import os
 
