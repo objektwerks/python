@@ -1,4 +1,4 @@
-# insertion sort - O(log n)
+# insertion sort - O(n^2)
 
 def insertionSort(items: list[int]) -> None:
   for index in range(1, len(items)):
