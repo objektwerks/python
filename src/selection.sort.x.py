@@ -12,3 +12,6 @@ def selectionSort(items: list[int]) -> list[int]:
         items[i], items[lowestNumberIndex] = items[lowestNumberIndex], items[i]
     
   return items
+
+ints: list[int] = [5, 3, 6, 2, 10]
+print(f'selection sort on ints {ints} to: {selectionSort(ints)}')
