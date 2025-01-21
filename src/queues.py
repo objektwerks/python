@@ -4,17 +4,14 @@ class Queue:
   def __init__(self):
     self.data = []
 
-  def enqueue(self, element):
+  def enqueue(self, element: int) -> None:
     self.data.append(element)
 
-  def dequeue(self):
+  def dequeue(self) -> int:
     if len(self.data) > 0:
       return self.data.pop(0)
     else:
-      return None
+      return int('-inf')
     
-  def read(self):
-    if len(self.data) > 0:
-      return self.data[0]
-    else:
-      return None
+  def len(self) -> int:
+    return len(self.data)
