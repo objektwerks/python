@@ -1,4 +1,4 @@
-# binary search - O(log n)
+# binary search - O(log N)
 
 def indexof(items: list[int], item: int) -> int:
   lowIndex: int = 0
