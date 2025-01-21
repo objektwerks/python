@@ -1,4 +1,4 @@
-# quick sort
+# quick sort - O(log n)
 
 def quicksort(items: list[int]) -> list[int]:
   if len(items) < 2:
