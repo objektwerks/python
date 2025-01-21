@@ -1,16 +1,16 @@
 # bubble sort
 
 def bubblesort(items: list[int]) -> list[int]:
-  unsortedIndex: int = len(items) - 1
+  lastUnsortedIndex: int = len(items) - 1
   sorted: bool = False
 
   while not sorted:
     sorted = True
-    for i in range(unsortedIndex):
+    for i in range(lastUnsortedIndex):
       if items[i] > items[i + 1]:
         items[i], items[i + 1] = items[i + 1], items[i]
         sorted = False
-    unsortedIndex -= 1
+    lastUnsortedIndex -= 1
 
   return items
 
