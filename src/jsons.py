@@ -9,14 +9,14 @@ print(f'dumps: dict to json: {lettersAsJson}')
 print(f'loads: json to dict: {json.loads(lettersAsJson)}')
 
 with open('json.txt', 'w') as f:
-    f.write(lettersAsJson)
-    print('write: json.txt\n')
+  f.write(lettersAsJson)
+  print('write: json.txt\n')
 
 rootpath: str = './'
 print("listdir: ./ \n")
 for entry in os.listdir(rootpath):
-    if os.path.isfile(os.path.join(rootpath, entry)):
-        print(entry)
+  if os.path.isfile(os.path.join(rootpath, entry)):
+      print(entry)
 
 os.remove('json.txt')
 print('\nremove: json.txt\n')
