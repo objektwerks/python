@@ -2,8 +2,8 @@
 
 def insertionSort(items: list[int]) -> None:
   for index in range(1, len(items)):
-    currentItem = items[index]
-    currentItemIndex = index - 1
+    currentItem: int = items[index]
+    currentItemIndex: int = index - 1
 
     while currentItemIndex >= 0:
       if items[currentItemIndex] > currentItem:
