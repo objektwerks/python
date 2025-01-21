@@ -4,7 +4,7 @@ class Stack:
   def __init__(self):
     self.data = []
 
-  def push(self, element) -> None:
+  def push(self, element: int) -> None:
     self.data.append(element)
 
   def pop(self) -> int:
@@ -24,4 +24,4 @@ print(f'stack push on [1, 2, 3] equal len of: {ints.len()}')
 ints.pop()
 ints.pop()
 ints.pop()
-print(f'stack pop off [1, 2, 3]: {ints.len()}')
+print(f'stack pop off [1, 2, 3] equal len of: {ints.len()}')
