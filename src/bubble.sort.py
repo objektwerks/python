@@ -1,4 +1,4 @@
-# bubble sort - O(N^2)
+# bubble sort - O(n^2)
 
 def bubblesort(items: list[int]) -> list[int]:
   lastUnsortedIndex: int = len(items) - 1

@@ -1,4 +1,4 @@
-# breadth first search - O(V + E)
+# breadth first search - O(v + e)
 
 from collections import deque
 import os

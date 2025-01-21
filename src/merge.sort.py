@@ -1,4 +1,4 @@
-# merge sort
+# merge sort - O(log n)
 
 def mergesort(items: list[int]) -> None:
   if len(items) > 1:
