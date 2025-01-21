@@ -7,6 +7,7 @@ def selectionSort(items: list[int]) -> None:
     for j in range(i + 1, len(items)):
       if items[j] < items[lowestNumberIndex]:
         lowestNumberIndex = j
+        
     if lowestNumberIndex != i:
       items[i], items[lowestNumberIndex] = items[lowestNumberIndex], items[i]
     
