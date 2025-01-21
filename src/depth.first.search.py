@@ -1,4 +1,4 @@
-# depth first search
+# depth first search - O(∣V∣+∣E∣)
 
 import os
 
