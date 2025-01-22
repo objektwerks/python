@@ -32,6 +32,6 @@ def sort(items: list[int]) -> None:
       j += 1
       k += 1
 
-ints: list[int] = [10, 5, 2, 3]
+ints: list[int] = [3, 2, 1]
 sort(ints)
 print(f'merge sort of ints {[10, 5, 2, 3]} sorts in-place to: {ints}')
