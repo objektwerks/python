@@ -21,5 +21,5 @@ def sort(items: list[int]) -> list[int]:
 
   return sortedItems
 
-ints: list[int] = [5, 3, 6, 2, 10]
-print(f'selection sort on ints {ints} to: {sort(ints)}')
+ints: list[int] = [3, 2, 1]
+print(f'selection sort on ints {ints} sorts to: {sort(ints)}')
