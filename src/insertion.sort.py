@@ -16,6 +16,6 @@ def sort(items: list[int]) -> None:
     
   return None
 
-ints: list[int] = [5, 3, 6, 2, 10]
+ints: list[int] = [3, 2, 1]
 sort(ints)
-print(f'insertion sort on ints {[5, 3, 6, 2, 10]} to: {ints}')
+print(f'insertion sort on ints {[3, 2, 1]} to: {ints}')
