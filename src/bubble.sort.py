@@ -15,4 +15,4 @@ def sort(items: list[int]) -> list[int]:
   return items
 
 ints: list[int] = [3, 2, 1]
-print(f'bubble sort on ints {ints} yields: {sort(ints)}')
+print(f'bubble sort on ints {ints} sorts to: {sort(ints)}')
