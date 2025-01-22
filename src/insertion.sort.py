@@ -18,4 +18,4 @@ def sort(items: list[int]) -> None:
 
 ints: list[int] = [3, 2, 1]
 sort(ints)
-print(f'insertion sort on ints {[3, 2, 1]} to: {ints}')
+print(f'insertion sort on ints {[3, 2, 1]} sorts in-place to: {ints}')
