@@ -11,7 +11,7 @@ def findSmallestItemIndex(items: list[int]) -> int:
 
   return findIndex
 
-def selectionSort(items: list[int]) -> list[int]:
+def sort(items: list[int]) -> list[int]:
   sortedItems: list[int] = []
   copyOfItems: list[int] = list(items)
 
@@ -22,4 +22,4 @@ def selectionSort(items: list[int]) -> list[int]:
   return sortedItems
 
 ints: list[int] = [5, 3, 6, 2, 10]
-print(f'selection sort on ints {ints} to: {selectionSort(ints)}')
+print(f'selection sort on ints {ints} to: {sort(ints)}')
