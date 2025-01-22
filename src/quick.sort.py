@@ -9,5 +9,5 @@ def sort(items: list[int]) -> list[int]:
     greaterItems: list[int] = [i for i in items[1:] if i > pivotItem]
     return sort(lesserItems) + [pivotItem] + sort(greaterItems)
 
-ints: list[int] = [10, 5, 2, 3]
+ints: list[int] = [3, 2, 1]
 print(f'quick sort of ints {ints} sorts to: {sort(ints)}')
