@@ -1,14 +1,16 @@
 # linked list
 
 from dataclasses import dataclass
-from typing import Any
+from typing import Protocol, TypeVar
+
+T = TypeVar("T")
 
 @dataclass
-class Node:
-  data: Any = None
-  next: Any = None
+class Node(Protocol[T]):
+  data: T
+  next: T
 
 @dataclass
-class LinkedList:
-  head: Any = None
-  tail: list[Any] = list()
+class LinkedList(Protocol[T]):
+  head: T
+  tail: list[T]
