@@ -14,3 +14,11 @@ class Node(Protocol[T]):
 class LinkedList(Protocol[T]):
   head: T
   tail: list[T]
+
+  @staticmethod
+  def build(items: list[T]):
+    len: int = len(items)
+    if len > 0:
+      head = items[0]
+      if len > 1:
+        tail = list[T][1:len - 1]
