@@ -11,3 +11,4 @@ class Node:
 @dataclass
 class LinkedList:
   head: Any
+  tail: list[Any]
