@@ -7,3 +7,7 @@ from typing import Any
 class Node:
   data: Any
   nextNode: Any
+
+@dataclass
+class LinkedList:
+  head: Any
