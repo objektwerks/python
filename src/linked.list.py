@@ -13,12 +13,15 @@ class Node(Protocol[T]):
 @dataclass
 class LinkedList(Protocol[T]):
   head: T
-  tail: list[T]
+  tail: list[T] = list[T]()
 
-  @staticmethod
-  def build(items: list[T]) -> None:
+  def of(self, items: list[T]) -> None:
     len: int = len(items)
     if len > 0:
       head = items[0]
       if len > 1:
         tail = list[T][1:len - 1]
+    else:
+      raise Exception("LinkedList requires at least 1 item.")
+
+data: LinkedList[int] = LinkedList(1, [2, 3])
