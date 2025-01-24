@@ -5,10 +5,10 @@ from typing import Any
 
 @dataclass
 class Node:
-  data: Any
-  nextNode: Any
+  data: Any = None
+  next: Any = None
 
 @dataclass
 class LinkedList:
-  head: Any
-  tail: list[Any]
+  head: Any = None
+  tail: list[Any] = list()
