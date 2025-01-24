@@ -16,7 +16,7 @@ class LinkedList(Protocol[T]):
   tail: list[T]
 
   @staticmethod
-  def build(items: list[T]):
+  def build(items: list[T]) -> None:
     len: int = len(items)
     if len > 0:
       head = items[0]
