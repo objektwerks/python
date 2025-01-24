@@ -11,4 +11,4 @@ class TreeNode(Protocol[T]):
   left: T
   right: T
 
-# TODO - not sure this approach really works in Python ( 2025.1.24 )
+# TODO - not sure this approach works in Python ( 2025.1.24 )
