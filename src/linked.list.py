@@ -14,3 +14,5 @@ class Node(Protocol[T]):
 class LinkedList(Node[T]):
   head: Node[T]
   tail: list[Node[T]]
+
+# TODO - not sure this approach really works in Python ( 2025.1.24 )
