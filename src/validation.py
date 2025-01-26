@@ -22,7 +22,7 @@ class Person(BaseModel):
     eighteen: date = date(today.year - 18, today.month, today.day)
     print(f'[validateBorn] born: {born} ... eighteen: {eighteen}')
     if born > eighteen:
-      raise ValueError("Married couples should be 18 years or older.")
+      raise ValueError("Married couples must be 18 years or older.")
     return born
   
   @model_validator(mode = "after")
