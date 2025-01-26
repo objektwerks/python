@@ -17,7 +17,7 @@ class Person(BaseModel):
 
   @field_validator("born")
   @classmethod
-  def validateBorn(cls, born: date) -> date:
+  def validateMarried(cls, born: date) -> date:
     today: date = date.today()
     eighteen: date = date(today.year - 18, today.month, today.day)
     print(f'[validateBorn] born: {born} ... eighteen: {eighteen}')
@@ -25,7 +25,7 @@ class Person(BaseModel):
       raise ValueError("Married couples should be 18 years or older.")
     return born
   
-  @model_validator(mode="after")
+  @model_validator(mode = "after")
   def validateJson(self) -> Self:
     print(f'[validateJson] pydantic class: {self.model_dump_json()}')
     return self
