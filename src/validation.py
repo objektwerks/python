@@ -6,4 +6,4 @@ class Person(BaseModel):
   name: str
   age: int
 
-print(f'pydantic class: {Person(name = "Fred Flintsonte", age = 24)}')
+print(f'pydantic class: {Person(name = "Fred Flintstone", age = 24)}')
