@@ -12,8 +12,14 @@ class Person(BaseModel):
   name: str
   born: date
   gender: Gender
+  married: bool
 
-person: Person = Person(name = "Fred Flintstone", born = date(2001, 1, 1), gender = Gender.male)
+person: Person = Person(
+  name = "Fred Flintstone",
+  born = date(2001, 1, 1),
+  gender = Gender.male,
+  married = True
+)
 print(f'pydantic class: {person}')
 
 personAsJson: str = person.model_dump_json()
