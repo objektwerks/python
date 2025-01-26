@@ -13,4 +13,5 @@ class Person(BaseModel):
   born: date
   gender: Gender
 
-print(f'pydantic class: {Person(name = "Fred Flintstone", born = date(2001, 1, 1), gender = Gender.male)}')
+person: Person = Person(name = "Fred Flintstone", born = date(2001, 1, 1), gender = Gender.male)
+print(f'pydantic class: {person}')
