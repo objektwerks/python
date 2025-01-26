@@ -1,5 +1,6 @@
 # pydantic
 
+from datetime import date
 from enum import Enum
 from pydantic import BaseModel
 
@@ -9,7 +10,7 @@ class Gender(Enum):
 
 class Person(BaseModel):
   name: str
-  age: int
+  born: date
   gender: Gender
 
-print(f'pydantic class: {Person(name = "Fred Flintstone", age = 24, gender = Gender.male)}')
+print(f'pydantic class: {Person(name = "Fred Flintstone", born = date(2001, 1, 1), gender = Gender.male)}')
