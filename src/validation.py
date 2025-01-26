@@ -17,8 +17,8 @@ class Person(BaseModel):
   @field_validator("born")
   @classmethod
   def validateBorn(cls, born: date) -> date:
-    today = date.today()
-    eighteen = date(today.year - 18, today.month, today.day)
+    today: date = date.today()
+    eighteen: date = date(today.year - 18, today.month, today.day)
     if born > eighteen:
       raise ValueError("Married couples should be 18 years or older.")
     return born
