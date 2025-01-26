@@ -72,6 +72,7 @@ Releases
 9. [2025.1.21] Added insertion sort.
 10. [2025.1.21] Added queue and stack.
 11. [2025.1.26] Added pydantic validation.
+12. [2025.1.26] Enhanced pydantic validation.
 
 Resources
 ---------
