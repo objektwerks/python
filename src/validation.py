@@ -2,7 +2,8 @@
 
 from datetime import date
 from enum import Enum
-from pydantic import BaseModel, Field, field_validator
+from typing import Self
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 class Gender(Enum):
   male = 1
@@ -23,6 +24,11 @@ class Person(BaseModel):
     if born > eighteen:
       raise ValueError("Married couples should be 18 years or older.")
     return born
+  
+  @model_validator(mode="after")
+  def validateJson(self) -> Self:
+    Person.model_validate_json( self.model_dump_json() )
+    return self
 
 person: Person = Person(
   name = "Fred Flintstone",
