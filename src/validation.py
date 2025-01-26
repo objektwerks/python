@@ -27,3 +27,6 @@ print(f'pydantic class as json: {personAsJson}')
 
 personFromJson: Person = Person.model_validate_json(personAsJson)
 print(f'pydantic class derived from json: {personFromJson}')
+
+updatedPerson: Person = person.model_copy(update={'born': date(2001, 1, 2)})
+print(f'pydantic class updated via copy: {updatedPerson}')
