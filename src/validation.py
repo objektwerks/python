@@ -27,7 +27,7 @@ class Person(BaseModel):
   
   @model_validator(mode="after")
   def validateJson(self) -> Self:
-    print(f'pydantic class json validated: {self.model_dump_json()}')
+    print(f'[validateJson] pydantic class: {self.model_dump_json()}')
     return self
 
 person: Person = Person(
