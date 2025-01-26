@@ -9,10 +9,10 @@ class Gender(Enum):
   female = 2
 
 class Person(BaseModel):
-  name: str = Field(frozen=True)
-  born: date = Field(frozen=True)
-  gender: Gender = Field(frozen=True)
-  married: bool = Field(frozen=True)
+  name: str = Field(frozen = True)
+  born: date = Field(frozen = True)
+  gender: Gender = Field(frozen = True)
+  married: bool = Field(frozen = True)
 
 person: Person = Person(
   name = "Fred Flintstone",
