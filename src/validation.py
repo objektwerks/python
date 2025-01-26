@@ -2,17 +2,17 @@
 
 from datetime import date
 from enum import Enum
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class Gender(Enum):
   male = 1
   female = 2
 
 class Person(BaseModel):
-  name: str
-  born: date
-  gender: Gender
-  married: bool
+  name: str = Field(frozen=True)
+  born: date = Field(frozen=True)
+  gender: Gender = Field(frozen=True)
+  married: bool = Field(frozen=True)
 
 person: Person = Person(
   name = "Fred Flintstone",
