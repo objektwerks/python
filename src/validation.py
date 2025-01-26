@@ -20,7 +20,7 @@ class Person(BaseModel):
   def validateMarried(cls, born: date) -> date:
     today: date = date.today()
     eighteen: date = date(today.year - 18, today.month, today.day)
-    print(f'[validateMarried] born: {born} eighteen: {eighteen}')
+    print(f'[validateMarried] born: {born} eighteen: {eighteen} is valid: {eighteen > born}')
     if born > eighteen:
       raise ValueError("Married couples must be 18 years or older.")
     return born
