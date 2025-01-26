@@ -70,7 +70,8 @@ Releases
 7. [2025.1.20] Added Dijstra's algo.
 8. [2025.1.21] Added bubble sort.
 9. [2025.1.21] Added insertion sort.
-10. [2025.1.21] Adde queue and stack.
+10. [2025.1.21] Added queue and stack.
+11. [2025.1.26] Added pydantic validation.
 
 Resources
 ---------
