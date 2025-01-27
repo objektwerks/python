@@ -21,5 +21,6 @@ def now():
 
 @app.post("/command")
 def command(command: Command):
+  # Demonstrates a command handler, with pattern matching, could work here with commands in and events out.
   content: str = f'command: {command.name} >>> event: command executed at {datetime.now().isoformat()}'
   return Event(name = content).model_dump_json()
