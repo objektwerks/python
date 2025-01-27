@@ -5,6 +5,10 @@
 
 from datetime import datetime
 from fastapi import FastAPI
+from pydantic import BaseModel
+
+class Command(BaseModel):
+  name: str
 
 app = FastAPI()
 
