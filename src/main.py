@@ -20,6 +20,6 @@ def now():
   return f'*** Now: {datetime.now().isoformat()}'
 
 @app.post("/command")
-def command(name: str):
-  content: str = f'command: {name} to event: {name} run on {datetime.now().isoformat()}'
+def command(command: Command):
+  content: str = f'command: {command.name} to event: {command.name} run on {datetime.now().isoformat()}'
   return Event(name = content).model_dump_json()
