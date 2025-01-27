@@ -10,6 +10,9 @@ from pydantic import BaseModel
 class Command(BaseModel):
   name: str
 
+class Event(BaseModel):
+  name: str
+
 app = FastAPI()
 
 @app.get("/now")
