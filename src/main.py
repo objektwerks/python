@@ -1,7 +1,7 @@
 # fastapi
 # run: fastapi dev ./src/main.py
 # test: curl -v http://127.0.0.1:8000/now
-# test: curl -X POST http://127.0.0.1:8000/command -H "Content-Type: application/json" -d '{"name":"run command"}'
+# test: curl -X POST http://127.0.0.1:8000/command -H "Content-Type: application/json" -d '{"name":"execute command"}'
 
 from datetime import datetime
 from fastapi import FastAPI
@@ -21,5 +21,5 @@ def now():
 
 @app.post("/command")
 def command(command: Command):
-  content: str = f'command: {command.name} >>> event: command run at {datetime.now().isoformat()}'
+  content: str = f'command: {command.name} >>> event: command executed at {datetime.now().isoformat()}'
   return Event(name = content).model_dump_json()
