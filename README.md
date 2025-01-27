@@ -2,6 +2,8 @@ Python
 ------
 >Survey of Python 3 features and libraries, with a strong focus on using type hints.
 
+>Highlights include Expression, fastapi and requests.
+
 Development
 -----------
 >Install a MacOS Python development environment.
