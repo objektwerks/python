@@ -19,6 +19,7 @@ app = FastAPI()
 def now():
   return f'*** Now: {datetime.now().isoformat()}'
 
-@app.get("/command")
+@app.post("/command")
 def command(name: str):
-  return Event(name = f'command: {name} to event: {name} run on {datetime.now().isoformat()}')
+  content: str = f'command: {name} to event: {name} run on {datetime.now().isoformat()}'
+  return Event(name = content).model_dump_json()
