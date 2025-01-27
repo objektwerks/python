@@ -9,4 +9,4 @@ app = FastAPI()
 
 @app.get("/now")
 def now():
-  return f'*** Current date and time: {datetime.now().isoformat()}'
+  return f'*** Now: {datetime.now().isoformat()}'
