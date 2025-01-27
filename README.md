@@ -73,6 +73,7 @@ Releases
 10. [2025.1.21] Added queue and stack.
 11. [2025.1.26] Added pydantic validation.
 12. [2025.1.26] Enhanced pydantic validation.
+13. [2025.1.27] Added fastapi.
 
 Resources
 ---------
