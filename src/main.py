@@ -1,5 +1,5 @@
 # fastapi
-# run: fastapi dev ./src/fast.api.py
+# run: fastapi dev ./src/main.py
 # test: curl -v http://localhost:8000/now
 
 from datetime import datetime
