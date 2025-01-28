@@ -17,9 +17,8 @@ Development
 >Install a MacOS Python development environment.
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.13
-3. brew install mypy
-4. Install [VSCode](https://code.visualstudio.com/)
-5. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance, MyPy Type Checker
+3. Install [VSCode](https://code.visualstudio.com/)
+4. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
 
 Virtual Env
 -----------
@@ -46,24 +45,10 @@ Upgrade Dependencies
 >To upgrade dependencies in requirements.txt:
 1. pip3 install --upgrade -r requirements.txt
 
-MyPy
-----
->To type check all source files:
-1. mypy ./src
-
 Run
 ---
 >Replace *.py with a source file name.
 1. python3.13 ./src/*.py
-
-Big O
------
-1. O(1)     - constant time
-2. O(log N) - logarithmic time
-3. O(N)     - linear time
-4. O(N2)    - quadratic time
-5. O(2^n)   - exponential time
-6. O(n!)    - factorial time
 
 Releases
 --------
@@ -81,6 +66,15 @@ Releases
 12. [2025.1.26] Enhanced pydantic validation.
 13. [2025.1.27] Added fastapi.
 14. [2025.1.28] Added sqlite3.
+
+Big O
+-----
+1. O(1)     - constant time
+2. O(log N) - logarithmic time
+3. O(N)     - linear time
+4. O(N2)    - quadratic time
+5. O(2^n)   - exponential time
+6. O(n!)    - factorial time
 
 Resources
 ---------
