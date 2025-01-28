@@ -26,7 +26,9 @@ with sql.connect(":memory:", detect_types = sql.PARSE_DECLTYPES | sql.PARSE_COLN
   cursor.execute(ddl)
   connection.commit()
 
-  todo = ('wash car', datetime.now, datetime.now)
+  created: datetime = datetime.now()
+  completed: datetime = datetime.now()
+  todo = ('wash car', created, completed)
   cursor.execute(insert, todo)
   connection.commit()
 
