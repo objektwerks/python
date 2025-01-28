@@ -10,6 +10,8 @@ Warning
 
 >Mypy and Pylance might be part of the problem. Because pip3 install and upgrade of dependencies works!
 
+>So I uninstall MyPy. Pylance still does not recognize fastapi and pydantic imports.
+
 >Clearly, Python ***desperately*** needs a proper build-package management tool!
 
 Python Repository
