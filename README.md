@@ -41,7 +41,7 @@ Virtual Env
 
 Install Dependencies
 --------------------
->To install dependencies in requirements.txt.
+>To install dependencies in **requirements.txt**.
 1. pip3 install -r requirements.txt
 
 Upgrade Dependencies
