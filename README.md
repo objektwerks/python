@@ -4,6 +4,10 @@ Python
 
 >Highlights include Expression, fastapi, pydantic and requests.
 
+Warning
+-------
+>Using pydantic and fastapi is highly problematic. Installs work, but the don't. Imports work, then they don't.
+
 Development
 -----------
 >Install a MacOS Python development environment.
