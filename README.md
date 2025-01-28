@@ -8,6 +8,8 @@ Warning
 -------
 >Using pydantic and fastapi is highly problematic. Installs work. Yet imports don't always work. Yet scripts work!
 
+>Mypy and Pylance might be part of the problem. Because pip3 install and upgrade of dependencies works!
+
 >In general, python project management is highly unstable. Python needs a proper build tool!
 
 Development
