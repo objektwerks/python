@@ -12,6 +12,10 @@ Warning
 
 >Clearly, Python ***desperately*** needs a proper build-package management tool!
 
+Python Repository
+-----------------
+* [PyPi](https://pypi.org/)
+
 Development
 -----------
 >Install a MacOS Python development environment.
@@ -30,10 +34,6 @@ Virtual Env
 5. pip3 install "fastapi[standard]"
 6. pip3 list
 7. pip3 freeze > requirements.txt
-
-Python Repository
------------------
-* [PyPi](https://pypi.org/)
 
 Install Dependencies
 --------------------
