@@ -6,7 +6,7 @@ Python
 
 Warning
 -------
->Using pydantic and fastapi is highly problematic.
+>Using pydantic and fastapi is problematic.
 
 >Installs work. Yet imports don't always work. Yet scripts work!
 
