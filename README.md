@@ -6,7 +6,7 @@ Python
 
 Warning
 -------
->Using pydantic and fastapi is highly problematic. Installs work, then they don't. Imports work, then they don't.
+>Using pydantic and fastapi is highly problematic. Installs work. Yet imports don't always work. Yet scripts work!
 
 >In general, python project management is highly unstable. Python needs a proper build tool!
 
