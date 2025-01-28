@@ -25,9 +25,10 @@ Virtual Env
 1. python3.13 -m venv venv
 2. source venv/bin/activate
 3. pip3 install --upgrade pip ( optional )
-4. pip3 install Expression fastapi pydantic requests
-5. pip3 list
-6. pip3 freeze > requirements.txt ( optional )
+4. pip3 install Expression pydantic requests
+5. pip3 install "fastapi[standard]"
+6. pip3 list
+7. pip3 freeze > requirements.txt ( optional )
 
 Python Repository
 -----------------
