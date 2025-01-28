@@ -17,6 +17,10 @@ insert: str = '''
   VALUES (?, ?, ?);
 '''
 
+select: str = '''
+  select * from todo;
+'''
+
 with sql.connect(":memory:", detect_types = sql.PARSE_DECLTYPES | sql.PARSE_COLNAMES) as connection:
   cursor: sql.Cursor = connection.cursor()
   cursor.execute(ddl)
