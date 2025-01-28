@@ -5,7 +5,7 @@ import sqlite3 as sql
 
 ddl: str = '''
   create table todo (
-    id integer primary key auto_increment,
+    id integer primary key autoincrement,
     task text not null,
     created timestamp not null,
     completed timestamp not null
