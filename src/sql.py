@@ -24,3 +24,4 @@ with sql.connect(":memory:", detect_types = sql.PARSE_DECLTYPES | sql.PARSE_COLN
 
   todo = ('wash car', datetime.now, datetime.now)
   cursor.execute(insert, todo)
+  connection.commit()
