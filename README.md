@@ -77,6 +77,7 @@ Releases
 11. [2025.1.26] Added pydantic validation.
 12. [2025.1.26] Enhanced pydantic validation.
 13. [2025.1.27] Added fastapi.
+14. [2025.1.28] Added sqlite3.
 
 Resources
 ---------
