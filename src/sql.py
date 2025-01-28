@@ -1,6 +1,6 @@
 # sqlite3
 
-from datetime import date
+from datetime import datetime
 import sqlite3 as sql
 
 ddl: str = '''
@@ -12,7 +12,15 @@ ddl: str = '''
   );
 '''
 
+insert: str = '''
+  insert into todo (task, created, completed) 
+  VALUES (?, ?, ?);
+'''
+
 with sql.connect(":memory:", detect_types = sql.PARSE_DECLTYPES | sql.PARSE_COLNAMES) as connection:
   cursor: sql.Cursor = connection.cursor()
   cursor.execute(ddl)
   connection.commit()
+
+  todo = ('wash car', datetime.now, datetime.now)
+  cursor.execute(insert, todo)
