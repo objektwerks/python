@@ -46,7 +46,7 @@ Install Dependencies
 
 Upgrade Dependencies
 --------------------
->To upgrade dependencies in requirements.txt:
+>To upgrade dependencies in **requirements.txt**:
 1. pip3 install --upgrade -r requirements.txt
 
 Run
