@@ -45,12 +45,6 @@ MyPy
 >To type check all source files:
 1. mypy ./src
 
-Pydantic
---------
->Install as follows:
-1. pip3 install pipenv
-2. pipenv install pydantic
-
 Run
 ---
 >Replace *.py with a source file name.
