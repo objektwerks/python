@@ -12,7 +12,7 @@ Warning
 
 >So I uninstalled MyPy. As expected, Pylance still does not recognize fastapi and pydantic imports.
 
->Clearly, Python ***desperately*** needs a proper build-package management tool!
+>Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
 Python Repository
 -----------------
