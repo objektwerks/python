@@ -12,7 +12,7 @@ Warning
 
 >Mypy and Pylance might be part of the problem. Because pip3 install and upgrade of dependencies works!
 
->Python project management is a nightmare. Python needs a proper build-package management tool!
+>Python needs a proper build-package management tool!
 
 Development
 -----------
@@ -28,11 +28,11 @@ Virtual Env
 >Setup virtual environment. See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 1. python3.13 -m venv venv
 2. source venv/bin/activate
-3. pip3 install --upgrade pip ( optional )
+3. pip3 install --upgrade pip
 4. pip3 install Expression pydantic requests
 5. pip3 install "fastapi[standard]"
 6. pip3 list
-7. pip3 freeze > requirements.txt ( optional )
+7. pip3 freeze > requirements.txt
 
 Python Repository
 -----------------
