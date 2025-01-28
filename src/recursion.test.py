@@ -1,4 +1,4 @@
-# recursion unit test
+# recursion test
 
 from recursion import factorial
 from unittest import TestCase
