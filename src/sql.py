@@ -1,5 +1,7 @@
 # sqlite3
 
-import sqlite3
+import sqlite3 as sql
 
-# connnection = sqlite3.connect(:memory:)
+with sql.connect(":memory:") as connection:
+  cursor = connection.cursor()
+
