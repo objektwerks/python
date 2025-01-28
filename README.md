@@ -22,9 +22,10 @@ Virtual Env
 >Setup virtual environment. See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 1. python3.13 -m venv venv
 2. source venv/bin/activate
-3. pip3 list
-4. pip3 install --upgrade pip ( optional )
-5. pip3 freeze > requirements.txt ( optional )
+3. pip3 install Expression fastapi pydantic requests
+4. pip3 list
+5. pip3 install --upgrade pip ( optional )
+6. pip3 freeze > requirements.txt ( optional )
 
 Python Repository
 -----------------
