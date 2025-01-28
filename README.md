@@ -41,7 +41,7 @@ Virtual Env
 
 Install Dependencies
 --------------------
->To install dependencies in **requirements.txt**.
+>To install dependencies in **requirements.txt**:
 1. pip3 install -r requirements.txt
 
 Upgrade Dependencies
@@ -51,7 +51,7 @@ Upgrade Dependencies
 
 Run
 ---
->Replace *.py with a source file name.
+>To run a script, replace *.py with a source file name:
 1. python3.13 ./src/*.py
 
 Releases
