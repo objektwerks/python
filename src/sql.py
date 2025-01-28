@@ -3,7 +3,7 @@
 from datetime import date
 import sqlite3 as sql
 
-ddl = '''
+ddl: str = '''
   create table todo (
     id integer primary key auto_increment,
     task text not null,
@@ -13,5 +13,5 @@ ddl = '''
 '''
 
 with sql.connect(":memory:", detect_types = sql.PARSE_DECLTYPES | sql.PARSE_COLNAMES) as connection:
-  cursor = connection.cursor()
+  cursor: sql.Cursor = connection.cursor()
   cursor.execute(ddl)
