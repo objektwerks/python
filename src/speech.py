@@ -17,8 +17,9 @@ print(f'speaking volume has been adjusted to: {engine.getProperty('volume')}') #
 # Voice
 male: int = 0
 female: int = 1
-voices = engine.getProperty('voices')
-print(f'speaking voices: {voices}')
+voices: list[tts.voice] = engine.getProperty('voices')
+for voice in voices:
+  print(f'speaking voices: {voice.name}')
 
 engine.setProperty('voice', voices[male].id)
 engine.say("These words will be converted from text to speech.")
