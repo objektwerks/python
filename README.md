@@ -59,6 +59,10 @@ Convert PIP to UV
 5. uv venv
 6. source .venv/bin/activate
 7. uv sync
+>The following warning comes and goes ( perhaps, it's a feature ):
+```
+VIRTUAL_ENV=venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead.
+```
 
 Install Dependency
 ------------------
