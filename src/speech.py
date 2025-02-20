@@ -17,3 +17,4 @@ print(f'speaking volume has been adjusted to: {engine.getProperty('volume')}') #
 engine.say("These words will be converted from text to speech.")
 
 engine.runAndWait()
+engine.stop()
