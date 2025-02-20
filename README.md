@@ -22,7 +22,7 @@ Repository
 
 Development
 -----------
->To install a MacOS Python development environment:
+>To install a Python development environment:
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.13
 3. Install [VSCode](https://code.visualstudio.com/)
