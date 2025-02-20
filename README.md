@@ -62,7 +62,7 @@ Convert to UV
 VIRTUAL_ENV = venv does not match the project environment path `.venv` and
 will be ignored; use `--active` to target the active environment instead.
 ```
->Other UV errors may popup as well. Clearly UV is still a work in progress.
+>Other UV errors may popup as well. Clearly, UV is still a work in progress.
 
 >Meanwhile, the crufty old PIP solution works just fine for this project - less
 >the issues defined above in the **Warning** section.
