@@ -1,6 +1,7 @@
 # pyttsx3 text-to-speach
 
 import pyttsx3 as tts
+from pyttsx3.voice import Voice
 
 engine = tts.init()
 
@@ -17,7 +18,7 @@ print(f'speaking volume has been adjusted to: {engine.getProperty('volume')}') #
 # Voice
 male: int = 0
 female: int = 1
-voices: list[tts.voice] = engine.getProperty('voices')
+voices: list[Voice] = engine.getProperty('voices')
 for voice in voices:
   print(f'speaking voices: {voice.name}')
 
