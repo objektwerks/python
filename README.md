@@ -49,6 +49,7 @@ Convert PIP to UV
 >To convert:
 1. uv init
 2. uv add -r requirements.txt
+3. uv sync --active
 
 Install Dependency
 ------------------
