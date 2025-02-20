@@ -60,7 +60,9 @@ Convert to UV
 VIRTUAL_ENV=venv does not match the project environment path `.venv` and
 will be ignored; use `--active` to target the active environment instead.
 ```
->Other UV errors popup as well. UV clearly still has issues. Meanwhile, the crufty PIP solution works just fine for this project.
+>Other UV errors popup as well. UV clearly still has issues.
+
+>Meanwhile, the crufty PIP solution works just fine for this project.
 
 Install Dependency
 ------------------
