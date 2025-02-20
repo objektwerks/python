@@ -5,6 +5,10 @@ from pyttsx3.voice import Voice
 
 engine = tts.init()
 
+text: str = "These words will be converted from text to speech."
+
+engine.say(text)
+
 # Rate
 print(f'rate of speaking is set at: {engine.getProperty('rate')}')
 engine.setProperty('rate', 125)
@@ -16,17 +20,12 @@ engine.setProperty('volume', 0.75)
 print(f'speaking volume has been adjusted to: {engine.getProperty('volume')}') # bug! not picking up new volume!
 
 # Voice
-male: int = 0
-female: int = 1
 voices: list[Voice] = engine.getProperty('voices')
 for voice in voices:
   print(f'speaking voices: {voice.name}')
-
-engine.setProperty('voice', voices[male].id)
-engine.say("These words will be converted from text to speech.")
-
-engine.setProperty('voice', voices[female].id)
-engine.say("These words will be converted from text to speech.")
+  if voice.name == "Daniel":
+    engine.setProperty('voice', voice.id)
+    engine.say(text)
 
 engine.runAndWait()
 engine.stop()
