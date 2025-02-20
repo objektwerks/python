@@ -37,7 +37,7 @@ Virtual Env
 4. pip3 install Expression pydantic requests
 5. pip3 install "fastapi[standard]"
 6. pip3 list
-7. pip3 freeze > **requirements.txt**
+7. pip3 freeze > requirements.txt
 
 Install UV
 ----------
