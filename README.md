@@ -34,11 +34,10 @@ Virtual Env
 1. python3.13 -m venv venv
 2. source venv/bin/activate
 3. pip3 install --upgrade pip
-4. pip3 install Expression pydantic requests
+4. pip3 install Expression pydantic requests pyttsx3
 5. pip3 install "fastapi[standard]"
-6. pip3 install pyttsx3
-7. pip3 list
-8. pip3 freeze > requirements.txt
+6. pip3 list
+7. pip3 freeze > requirements.txt
 
 Convert to UV
 -------------
