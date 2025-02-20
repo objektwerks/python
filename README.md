@@ -40,17 +40,14 @@ Virtual Env
 7. pip3 list
 8. pip3 freeze > requirements.txt
 
-Install UV
-----------
+Convert to UV
+-------------
 >To install uv:
 1. brew install uv
 >To update uv:
 1. brew update
 2. brew upgrade
-
-Convert to UV
--------------
->To convert:
+>To convert to uv:
 1. pip3 freeze > requirements.txt
 2. uv init
 3. uv add -r requirements.txt
