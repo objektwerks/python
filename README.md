@@ -39,6 +39,12 @@ Virtual Env
 6. pip3 list
 7. pip3 freeze > **requirements.txt**
 
+Install Dependency
+------------------
+>To install a dependency:
+1. pip3 install **dependency**
+2. pip3 freeze > **requirements.txt**
+
 Install Dependencies
 --------------------
 >To install dependencies in **requirements.txt**:
