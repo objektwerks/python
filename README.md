@@ -53,13 +53,14 @@ Update UV
 Convert PIP to UV
 -----------------
 >To convert:
-1. uv init
-2. uv add -r requirements.txt
-3. deactivate
-4. rm -rf .venv
-5. uv venv
-6. source .venv/bin/activate
-7. uv sync
+1. pip3 freeze > requirements.txt
+2. uv init
+3. uv add -r requirements.txt
+4. deactivate
+5. rm -rf .venv
+6. uv venv
+7. source .venv/bin/activate
+8. uv sync
 >The following warning comes and goes ( perhaps, it's a feature ):
 ```
 VIRTUAL_ENV=venv does not match the project environment path `.venv` and
