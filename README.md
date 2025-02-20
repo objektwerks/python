@@ -105,6 +105,7 @@ Releases
 13. [2025.1.27] Added fastapi.
 14. [2025.1.28] Added sqlite3.
 15. [2025.1.28] Added unittest.
+16. [2025.2.20] Added pyttsx3.
 
 Big O
 -----
