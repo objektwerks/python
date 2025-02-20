@@ -48,8 +48,8 @@ Install UV
 1. brew update
 2. brew upgrade
 
-Convert PIP to UV
------------------
+Convert to UV
+-------------
 >To convert:
 1. pip3 freeze > requirements.txt
 2. uv init
