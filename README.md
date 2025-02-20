@@ -65,6 +65,7 @@ Convert PIP to UV
 VIRTUAL_ENV=venv does not match the project environment path `.venv` and
 will be ignored; use `--active` to target the active environment instead.
 ```
+>Clearly, UV still has issues.
 
 Install Dependency
 ------------------
