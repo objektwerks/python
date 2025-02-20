@@ -1,0 +1,13 @@
+[project]
+name = "python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "packaging==24.2",
+    "wheel",
+]
+
+[tool.uv.sources]
+wheel = { path = "../../../../opt/homebrew/Cellar/python@3.13/3.13.2/libexec/wheel-0.45.1-py3-none-any.whl" }
