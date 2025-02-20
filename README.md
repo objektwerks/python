@@ -16,8 +16,8 @@ Warning
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
-Python Repository
------------------
+Repository
+----------
 * [PyPi](https://pypi.org/)
 
 Development
