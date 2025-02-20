@@ -14,6 +14,16 @@ print(f'speaking volume is set at: {engine.getProperty('volume')}')
 engine.setProperty('volume', 0.75)
 print(f'speaking volume has been adjusted to: {engine.getProperty('volume')}') # bug! not picking up new volume!
 
+# Voice
+male: int = 0
+female: int = 1
+voices = engine.getProperty('voices')
+print(f'speaking voices: {voices}')
+
+engine.setProperty('voice', voices[male].id)
+engine.say("These words will be converted from text to speech.")
+
+engine.setProperty('voice', voices[female].id)
 engine.say("These words will be converted from text to speech.")
 
 engine.runAndWait()
