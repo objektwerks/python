@@ -39,11 +39,16 @@ Virtual Env
 6. pip3 list
 7. pip3 freeze > **requirements.txt**
 
-UV
---
+Install UV
+----------
 >To install uv:
 1. brew install uv
->To convert an existing pip, see: [Switching From PIP and Virtualenv to UV](https://www.datacamp.com/tutorial/python-uv)
+
+Convert PIP to UV
+-----------------
+>To convert an existing ```pip```, see: [Switching From PIP and Virtualenv to UV](https://www.datacamp.com/tutorial/python-uv)
+
+>That said, ```uv``` doesn't copy ```requirements.txt``` dependenices to the ```pyproject.toml```.
 
 Install Dependency
 ------------------
