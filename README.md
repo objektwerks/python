@@ -71,7 +71,7 @@ Install Dependency
 ------------------
 >To install a dependency:
 1. pip3 install **dependency**
-2. pip3 freeze > **requirements.txt**
+2. pip3 freeze > requirements.txt
 
 Install Dependencies
 --------------------
