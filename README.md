@@ -30,7 +30,7 @@ Development
 
 Virtual Env
 -----------
->Setup virtual environment. See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
+>To setup a virtual environment:
 1. python3.13 -m venv venv
 2. source venv/bin/activate
 3. pip3 install --upgrade pip
@@ -38,6 +38,7 @@ Virtual Env
 5. pip3 install "fastapi[standard]"
 6. pip3 list
 7. pip3 freeze > requirements.txt
+>See [VE Setup](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)
 
 Convert to UV
 -------------
