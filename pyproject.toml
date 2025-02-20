@@ -1,7 +1,7 @@
 [project]
 name = "python"
 version = "0.1.0"
-description = "Add your description here"
+description = "Survey of Python 3 features and libraries, with a strong focus on using type hints."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
