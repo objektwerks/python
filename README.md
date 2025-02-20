@@ -44,6 +44,11 @@ Install UV
 >To install uv:
 1. brew install uv
 
+Update UV
+---------
+1. brew update
+2. brew upgrade
+
 Convert PIP to UV
 -----------------
 >To convert:
