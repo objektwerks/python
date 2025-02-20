@@ -53,17 +53,17 @@ Convert to UV
 4. uv sync
 >***Optional*** if virtual env errors occur:
 1. deactivate
-2. rm -rf .venv
+2. rm -rf .venv ***or*** rm -rf venv
 3. uv venv
 4. source venv/bin/activate
 >The following warning comes and goes:
 ```
-VIRTUAL_ENV=venv does not match the project environment path `.venv` and
+VIRTUAL_ENV = venv does not match the project environment path `.venv` and
 will be ignored; use `--active` to target the active environment instead.
 ```
->Other UV errors popup as well. UV clearly still has issues.
+>Other UV errors popup as well. Clearly UV is still a work in progress.
 
->Meanwhile, the crufty PIP solution works just fine for this project.
+>Meanwhile, the crufty old PIP solution works just fine for this project.
 
 Install Dependency
 ------------------
