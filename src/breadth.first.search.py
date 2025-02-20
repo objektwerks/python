@@ -26,7 +26,7 @@ def filter(graph: dict[int, list[int]], start: int, filter: Callable[[int], bool
   while queue:
     node: int = queue.popleft()
     visited.append(node)
-    if filter(node) == True:
+    if filter(node):
       filtered.append(node)
 
     for child in graph[node]:
