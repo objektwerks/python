@@ -43,7 +43,7 @@ UV
 --
 >To install uv:
 1. brew install uv
->To convert and existing pip, see: https://www.datacamp.com/tutorial/python-uv
+>To convert an existing pip, see: [Switching From PIP and Virtualenv to UV](https://www.datacamp.com/tutorial/python-uv)
 
 Install Dependency
 ------------------
