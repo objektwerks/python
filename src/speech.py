@@ -7,7 +7,7 @@ engine = tts.init()
 # Rate of speaking.
 print(f'rate of speaking is set at: {engine.getProperty('rate')}')
 engine.setProperty('rate', 125)
-print(f'rate of speaking has been adjusted to: {engine.getProperty('rate')}')
+print(f'rate of speaking has been adjusted to: {engine.getProperty('rate')}') # bug! not picking up new rate!
 
 engine.say("These words will be converted from text to speech.")
 
