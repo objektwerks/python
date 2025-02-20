@@ -50,11 +50,12 @@ Convert to UV
 1. pip3 freeze > requirements.txt
 2. uv init
 3. uv add -r requirements.txt
-4. deactivate
-5. rm -rf .venv
-6. uv venv
-7. source venv/bin/activate
-8. uv sync
+4. uv sync
+>***Optional*** if virtual env errors occur:
+1. deactivate
+2. rm -rf .venv
+3. uv venv
+4. source venv/bin/activate
 >The following warning comes and goes:
 ```
 VIRTUAL_ENV=venv does not match the project environment path `.venv` and
