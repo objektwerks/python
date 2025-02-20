@@ -46,9 +46,9 @@ Install UV
 
 Convert PIP to UV
 -----------------
->To convert an existing ```pip```, see: [Switching From PIP and Virtualenv to UV](https://www.datacamp.com/tutorial/python-uv)
-
->That said, ```uv``` doesn't copy ```requirements.txt``` dependenices to the ```pyproject.toml```.
+>To convert:
+1. uv init
+2. uv add -r requirements.txt
 
 Install Dependency
 ------------------
