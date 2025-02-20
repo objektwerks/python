@@ -53,7 +53,7 @@ Convert to UV
 4. deactivate
 5. rm -rf .venv
 6. uv venv
-7. source .venv/bin/activate
+7. source venv/bin/activate
 8. uv sync
 >The following warning comes and goes ( perhaps, it's a feature ):
 ```
