@@ -39,6 +39,12 @@ Virtual Env
 6. pip3 list
 7. pip3 freeze > **requirements.txt**
 
+UV
+--
+>To install uv:
+1. brew install uv
+>To convert and existing pip, see: https://www.datacamp.com/tutorial/python-uv
+
 Install Dependency
 ------------------
 >To install a dependency:
