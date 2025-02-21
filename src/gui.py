@@ -1,14 +1,14 @@
 # Tkinter
 
 import tkinter as tk
-from tkinter import Tk
+from tkinter import Label, Tk
 
 # Window
 root: Tk = tk.Tk()
 root.title("GUI")
 
 # Label
-label = tk.Label(root, text="Label:")
+label: Label = tk.Label(root, text="Label:")
 label.pack()
 
 # Entry
