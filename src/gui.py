@@ -1,9 +1,10 @@
 # Tkinter
 
 import tkinter as tk
+from tkinter import Tk
 
 # Window
-root = tk.Tk()
+root: Tk = tk.Tk()
 root.title("GUI")
 
 # Label
