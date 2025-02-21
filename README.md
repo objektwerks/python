@@ -2,7 +2,7 @@ Python
 ------
 >Survey of Python 3 features and libraries, with a strong focus on using type hints.
 
->Highlights include Expression, fastapi, pydantic, requests, sqlite3 and pyttsx3.
+>Highlights include Expression, fastapi, pydantic, requests, sqlite3, pyttsx3, tkinter and algos.
 
 Issues
 ------
