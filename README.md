@@ -69,7 +69,9 @@ will be ignored; use `--active` to target the active environment instead.
 ```
 >Other UV errors may popup as well. UV is still a work in progress.
 
->Sadly, you may go thru several variations of this install process. The Python tool space is **not** professional grade.
+>You may go thru several ***variations*** of this install process.
+
+>Clearly, the Python tool space is **not** professional grade yet.
 
 Install Dependency
 ------------------
