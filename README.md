@@ -22,7 +22,7 @@ Warning
 
 >**Note**: After going thru several pip-to-uv conversion processes, the import issues have finally vanished. [2025.2.20]
 
->**Comment**: While no build tool is perfect, these problems don't exist in the JVM space, with Maven, Gradel or Sbt.
+>**Comment**: While no build tool is perfect, many these problems Python build issues simply don't exist in the JVM space, with Maven, Gradel or Sbt. And UV is supposed to be modeling Cargo. Sorry, I don't think so.
 
 Repository
 ----------
