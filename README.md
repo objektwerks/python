@@ -6,7 +6,7 @@ Python
 
 Warning
 -------
->Using ***expression, fastapi, pydantic and requests*** is problematic!
+>Using ***fastapi and pydantic*** is problematic!
 
 >Installs work. Yet imports don't always work. Yet scripts may work!
 
@@ -16,7 +16,7 @@ Warning
 
 >Yet, a day ago, I experienced no fastapi or pydantic import errors. Rebuilding the venv has not helped.
 
->Recently, I've moved to UV. And Ruff is just as clueless with ***expression, fastapi, pydantic and requests*** imports.
+>I recently moved to UV. And Ruff is just as clueless with ***expression, fastapi, pydantic and requests*** imports.
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
