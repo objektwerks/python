@@ -52,7 +52,7 @@ Convert to UV
 -------------
 >To install:
 1. brew install pipx
-2. pipx install uv ( a ***brew install uv*** work, yet fails at the project level )
+2. pipx install uv ( a global ```brew install uv``` works, yet appears to fail at the project level )
 >To convert:
 1. uv init
 2. uv add -r requirements.txt ( don't lose the listed dependencies in this file )
