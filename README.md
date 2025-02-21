@@ -6,7 +6,7 @@ Python
 
 Warning
 -------
->Using ***expression, fastapi, pydantic, requests*** is problematic!
+>Using ***expression, fastapi, pydantic and requests*** is problematic!
 
 >Installs work. Yet imports don't always work. Yet scripts may work!
 
@@ -15,6 +15,8 @@ Warning
 >So I uninstalled MyPy. Yet, as expected, Pylance still does not recognize fastapi and pydantic imports.
 
 >Yet, a day ago, I experienced no fastapi or pydantic import errors. Rebuilding the venv has not helped.
+
+>And, now, I've moved to UV. Ruff is just a clueless with ***expression, fastapi, pydantic and requests*** imports.
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
