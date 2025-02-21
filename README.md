@@ -47,15 +47,12 @@ Virtual Env
 Convert to UV
 -------------
 >To install:
-1. brew install uv
->To update:
-1. brew update
-2. brew upgrade
+1. brew install pipx
+2. pipx install uv
 >To convert:
-1. pip3 freeze > requirements.txt
-2. uv init
-3. uv add -r requirements.txt
-4. uv sync
+1. uv init
+2. uv add -r requirements.txt
+3. uv sync
 >***Optional*** if virtual env errors occur:
 1. deactivate
 2. rm -rf .venv ***or*** rm -rf venv
