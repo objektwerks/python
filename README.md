@@ -52,10 +52,10 @@ Convert to UV
 -------------
 >To install:
 1. brew install pipx
-2. pipx install uv
+2. pipx install uv ( a ***brew install uv*** work, yet fails at the project level )
 >To convert:
 1. uv init
-2. uv add -r requirements.txt
+2. uv add -r requirements.txt ( don't lose the listed dependencies in this file )
 3. uv sync
 >***Optional*** if virtual env errors occur:
 1. deactivate
@@ -69,8 +69,7 @@ will be ignored; use `--active` to target the active environment instead.
 ```
 >Other UV errors may popup as well. Clearly, UV is still a work in progress.
 
->Sadly, you may go thru several variations of the install process.
->The Python tool space is the new wild wild west. :)
+>Sadly, you may go thru several variations of this install process. The Python tool space is **not** professional grade.
 
 Install Dependency
 ------------------
