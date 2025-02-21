@@ -63,8 +63,8 @@ Convert to UV
 VIRTUAL_ENV = venv does not match the project environment path `.venv` and
 will be ignored; use `--active` to target the active environment instead.
 ```
->Other UV errors may popup as well. UV is still a work in progress. You may go thru
->several ***variations*** of this install process before you succeed.
+>Other UV errors may popup as well. UV is still a work in progress. You may go
+>thru several ***variations*** of this conversion process before you succeed.
 
 Install Dependency
 ------------------
