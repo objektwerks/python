@@ -1,7 +1,7 @@
 # Tkinter
 
 import tkinter as tk
-from tkinter import Label, Tk
+from tkinter import Entry, Label, Tk
 
 # Window
 root: Tk = tk.Tk()
@@ -12,7 +12,7 @@ label: Label = tk.Label(root, text="Label:")
 label.pack()
 
 # Entry
-entry = tk.Entry(root)
+entry: Entry = tk.Entry(root)
 entry.pack()
 
 # Handler
