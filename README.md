@@ -12,7 +12,7 @@ Issues
 
 >The day before, I experienced **no** fastapi or pydantic import errors. Rebuilding the virtual env failed to resolve the issue.
 
->I recently moved to UV. And Ruff is just as clueless about ***expression, fastapi, pydantic and requests*** imports.
+>I recently moved to UV, to include Ruff. But Ruff was just as clueless about expression, fastapi, pydantic and requests imports.
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
