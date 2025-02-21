@@ -85,6 +85,8 @@ Upgrade Dependencies
 --------------------
 >To upgrade dependencies in **requirements.txt**:
 1. pip3 install --upgrade -r requirements.txt
+>or:
+1. uv sync
 
 Run
 ---
