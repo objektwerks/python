@@ -78,6 +78,8 @@ Install Dependencies
 --------------------
 >To install dependencies in **requirements.txt**:
 1. pip3 install -r requirements.txt
+>or:
+1. uv add -r requirements.txt
 
 Upgrade Dependencies
 --------------------
