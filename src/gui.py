@@ -1,7 +1,5 @@
 # Tkinter
 
-import tkinter
-
 import tkinter as tk
 
 # Window
