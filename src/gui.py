@@ -10,11 +10,11 @@ window.eval('tk::PlaceWindow . center')
 
 # Label
 label: Label = tk.Label(window, text="Label:")
-label.pack()
+label.pack(padx=5, pady=15, side=tk.LEFT)
 
 # Entry
 entry: Entry = tk.Entry(window)
-entry.pack()
+entry.pack(padx=5, pady=20, side=tk.LEFT)
 
 # Handler
 def on_button_click():
@@ -26,7 +26,7 @@ button: Button = tk.Button(
   text="Button",
   command=on_button_click
 )
-button.pack()
+button.pack(padx=5, pady=20, side=tk.LEFT)
 
 # Event Loop
 window.mainloop()
