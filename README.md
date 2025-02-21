@@ -22,6 +22,8 @@ Warning
 
 >**Note**: After going thru several pip-to-uv conversion processes, the import issues have vanished. [2025.2.20]
 
+>**Comment**: While no build tool is perfect, these problems don't exist in the JVM space, with Maven, Gradel or Sbt.
+
 Repository
 ----------
 * [PyPi](https://pypi.org/)
