@@ -17,7 +17,7 @@ entry.pack()
 
 # Handler
 def on_button_click():
-  print(f'entered: {entry.get()}')
+  print(f'text entered: {entry.get()}')
 
 # Button
 button = tk.Button(root, text="Button", command=on_button_click)
