@@ -4,15 +4,16 @@ import tkinter as tk
 from tkinter import Button, Entry, Label, Tk
 
 # Window
-root: Tk = tk.Tk()
-root.title("GUI")
+window: Tk = tk.Tk()
+window.title("GUI")
+window.eval('tk::PlaceWindow . center')
 
 # Label
-label: Label = tk.Label(root, text="Label:")
+label: Label = tk.Label(window, text="Label:")
 label.pack()
 
 # Entry
-entry: Entry = tk.Entry(root)
+entry: Entry = tk.Entry(window)
 entry.pack()
 
 # Handler
@@ -21,11 +22,11 @@ def on_button_click():
 
 # Button
 button: Button = tk.Button(
-  root,
+  window,
   text="Button",
   command=on_button_click
 )
 button.pack()
 
 # Event Loop
-root.mainloop()
+window.mainloop()
