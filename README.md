@@ -8,9 +8,9 @@ Issues
 ------
 >Using ***fastapi and pydantic*** can be problematic! Installs work. Yet imports don't always work. Yet scripts may work!
 
->Mypy and Pylance might be part of the problem. Or not. Because pip3 install and upgrade of dependencies works!
+>I thought Mypy or Pylance might be the source of the problem. So I uninstalled MyPy.
 
->So I uninstalled MyPy. Yet, as expected, Pylance still does not recognize fastapi and pydantic imports.
+>Yet Pylance still did not recognize fastapi and pydantic imports.
 
 >Yet, a day ago, I experienced no fastapi or pydantic import errors. Rebuilding the venv has not helped.
 
