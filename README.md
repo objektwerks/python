@@ -71,7 +71,7 @@ will be ignored; use `--active` to target the active environment instead.
 
 >You may go thru several ***variations*** of this install process before you succeed.
 
->Clearly, the Python tool space is **not** professional grade yet.
+>Clearly, the Python tool space is ***not*** professional grade yet.
 
 Install Dependency
 ------------------
