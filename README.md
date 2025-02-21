@@ -10,7 +10,7 @@ Warning
 
 >Installs work. Yet imports don't always work. Yet scripts may work!
 
->Mypy and Pylance might be part of the problem. Because pip3 install and upgrade of dependencies works!
+>Mypy and Pylance might be part of the problem. Or not. Because pip3 install and upgrade of dependencies works!
 
 >So I uninstalled MyPy. Yet, as expected, Pylance still does not recognize fastapi and pydantic imports.
 
