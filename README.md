@@ -20,7 +20,7 @@ Warning
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
->**Note**: After going thru several pip-to-uv conversion processes, the import issues have vanished. [2025.2.20]
+>**Note**: After going thru several pip-to-uv conversion processes, the import issues have finally vanished. [2025.2.20]
 
 >**Comment**: While no build tool is perfect, these problems don't exist in the JVM space, with Maven, Gradel or Sbt.
 
