@@ -14,7 +14,7 @@ Issues
 
 >I recently moved to UV, to include Ruff. But Ruff was just as clueless about expression, fastapi, pydantic and requests imports.
 
->Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
+>Python ***desperately*** needs a proper build-package-typer management tool!
 
 >[2025.2.20] After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished.
 
