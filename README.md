@@ -6,9 +6,7 @@ Python
 
 Warning
 -------
->Using ***fastapi and pydantic*** is problematic!
-
->Installs work. Yet imports don't always work. Yet scripts may work!
+>Using ***fastapi and pydantic*** is problematic! Installs work. Yet imports don't always work. Yet scripts may work!
 
 >Mypy and Pylance might be part of the problem. Or not. Because pip3 install and upgrade of dependencies works!
 
