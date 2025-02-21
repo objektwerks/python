@@ -48,7 +48,6 @@ def matchOnColor(color: Color) -> str:
     case Color.red: return 'red'
     case Color.green: return 'green'
     case Color.blue: return 'blue'
-    case _: return 'unknown'
 
 color: Color = Color.red
 print(f'match on {color} to {matchOnColor(color)}')
