@@ -65,8 +65,8 @@ will be ignored; use `--active` to target the active environment instead.
 ```
 >Other UV errors may popup as well. Clearly, UV is still a work in progress.
 
->Meanwhile, the crufty old PIP solution works just fine for this project - less
->the issues defined above in the **Warning** section.
+>Sadly, you may go thru several variations of the install process.
+>The Python tool space is the new wild wild west. :)
 
 Install Dependency
 ------------------
