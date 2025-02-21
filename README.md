@@ -4,9 +4,9 @@ Python
 
 >Highlights include Expression, fastapi, pydantic, requests, sqlite3 and pyttsx3.
 
-Warning
--------
->Using ***fastapi and pydantic*** is problematic! Installs work. Yet imports don't always work. Yet scripts may work!
+Issues
+------
+>Using ***fastapi and pydantic*** can be problematic! Installs work. Yet imports don't always work. Yet scripts may work!
 
 >Mypy and Pylance might be part of the problem. Or not. Because pip3 install and upgrade of dependencies works!
 
