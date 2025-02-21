@@ -1,7 +1,7 @@
 # Tkinter
 
 import tkinter as tk
-from tkinter import Entry, Label, Tk
+from tkinter import Button, Entry, Label, Tk
 
 # Window
 root: Tk = tk.Tk()
@@ -20,7 +20,11 @@ def on_button_click():
   print(f'text entered: {entry.get()}')
 
 # Button
-button = tk.Button(root, text="Button", command=on_button_click)
+button: Button = tk.Button(
+  root,
+  text="Button",
+  command=on_button_click
+)
 button.pack()
 
 # Event Loop
