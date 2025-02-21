@@ -16,7 +16,7 @@ Issues
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
->**Note**: After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished. [2025.2.20]
+>[2025.2.20] After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished.
 
 Repository
 ----------
