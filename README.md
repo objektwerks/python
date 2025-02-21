@@ -29,8 +29,10 @@ Development
 >To install a Python development environment:
 1. Install [Homebrew](https://brew.sh/)
 2. brew install python@3.13
-3. Install [VSCode](https://code.visualstudio.com/)
-4. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
+3. brew install python-tk@3.13
+4. brew install tcl-tk ( I'm not 100% sure on this install )
+5. Install [VSCode](https://code.visualstudio.com/)
+6. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
 
 Virtual Env
 -----------
