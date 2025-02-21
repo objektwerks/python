@@ -20,6 +20,8 @@ Warning
 
 >Clearly, Python ***desperately*** needs a proper build-package-typer management tool!
 
+>**Note**: After going thru several pip-to-uv conversion processes, the import issues have vanished. [2025.2.20]
+
 Repository
 ----------
 * [PyPi](https://pypi.org/)
