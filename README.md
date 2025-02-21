@@ -71,11 +71,6 @@ will be ignored; use `--active` to target the active environment instead.
 >Meanwhile, the crufty old PIP solution works just fine for this project - less
 >the issues defined above in the **Warning** section.
 
-Ruff
-----
->See: [Ruff](https://docs.astral.sh/ruff/), a Python linter.
-1. uv pip install ruff
-
 Install Dependency
 ------------------
 >To install a dependency:
