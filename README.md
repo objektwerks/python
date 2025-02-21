@@ -22,8 +22,6 @@ Warning
 
 >**Note**: After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues have vanished. [2025.2.20]
 
->**Comment**: While no build tool is perfect, many of these problematic Python build issues simply don't exist in the JVM space, with Maven, Gradle or Sbt. And UV is supposed to be the next Cargo?
-
 Repository
 ----------
 * [PyPi](https://pypi.org/)
