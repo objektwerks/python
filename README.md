@@ -67,7 +67,7 @@ Convert to UV
 VIRTUAL_ENV = venv does not match the project environment path `.venv` and
 will be ignored; use `--active` to target the active environment instead.
 ```
->Other UV errors may popup as well. Clearly, UV is still a work in progress.
+>Other UV errors may popup as well. UV is still a work in progress.
 
 >Sadly, you may go thru several variations of this install process. The Python tool space is **not** professional grade.
 
