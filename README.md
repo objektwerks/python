@@ -71,6 +71,8 @@ Install Dependency
 >To install a dependency:
 1. pip3 install ***dependency***
 2. pip3 freeze > requirements.txt
+>or:
+1. uv add "dependency-name"
 
 Install Dependencies
 --------------------
