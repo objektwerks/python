@@ -12,3 +12,4 @@ print(f'joke:\n {joke}')
 
 engine = tts.init()
 engine.setProperty('rate', 125)
+engine.setProperty('volume', 0.75)
