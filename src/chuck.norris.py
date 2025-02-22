@@ -11,3 +11,4 @@ joke: str = json.loads(responseAsJson)['value']
 print(f'joke:\n {joke}')
 
 engine = tts.init()
+engine.setProperty('rate', 125)
