@@ -113,6 +113,7 @@ Releases
 14. [2025.1.28] Added sqlite3.
 15. [2025.1.28] Added unittest.
 16. [2025.2.20] Added pyttsx3.
+17. [2025.2.22] Added Chuck Norris jokes via requests, json and pyttsx3.
 
 Big O
 -----
