@@ -2,7 +2,6 @@
 
 import json
 import requests
-from requests import Response
 import pyttsx3 as tts
 from pyttsx3 import Engine
 
