@@ -3,5 +3,6 @@
 import requests
 from requests import Response
 
-joke: str = requests.get("https://randomuser.me/api/").text
+api: str = "https://api.chucknorris.io/jokes/random"
+joke: str = requests.get(api).text
 print(f'joke:\n {joke}')
