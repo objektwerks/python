@@ -1,9 +1,10 @@
 # pyttsx3 text-to-speach
 
 import pyttsx3 as tts
+from pyttsx3 import Engine
 from pyttsx3.voice import Voice
 
-engine = tts.init()
+engine: Engine = tts.init()
 
 text: str = "These words will be converted from text to speech."
 
