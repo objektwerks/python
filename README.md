@@ -29,8 +29,9 @@ Development
 2. brew install python@3.13
 3. brew install tcl-tk
 4. brew install python-tk@3.13
-5. Install [VSCode](https://code.visualstudio.com/)
-6. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
+5. brew install mypy
+6. Install [VSCode](https://code.visualstudio.com/)
+7. Install VSCode Python Microsoft Extensions: Python, Python Debugger, Pylance
 
 Virtual Env
 -----------
