@@ -14,7 +14,7 @@ Issues
 
 >I recently moved to UV, to include Ruff. But Ruff was just as clueless about expression, fastapi, pydantic and requests imports.
 
->Reinstalling Mypy, I noticed it complains about modules with no typing info.
+>Reinstalling Mypy, I noticed it complains about modules with no typing info. And that's a good thing. But Python is not Scala. :)
 
 >Python ***desperately*** needs a proper build-package-typer management tool.
 
