@@ -60,6 +60,7 @@ Convert to UV
 2. rm -rf .venv ***or*** rm -rf venv
 3. uv venv
 4. source venv/bin/activate
+5. uv pip freeze > requirements.txt
 >The following warning can occur:
 ```
 VIRTUAL_ENV = venv does not match the project environment path `.venv` and
