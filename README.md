@@ -18,14 +18,14 @@ Issues
 
 >The Python community appears to be split on publishing modules with or without types.
 
->Python ***desperately*** needs a proper build-package-typer management tool.
-
 >[2025.2.20] After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished.
 
 >[2025.2.21] Since moving to UV, this text is randomly printed to the console:
 ```
 %}%{%}(python) %(?:%{x3b32m%}➜ :%{x3b31m%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{%}%{%}%{%}%{%};84e5f828-3221-426a-9cde-fb665547661
 ```
+
+>Python ***desperately*** needs a proper build-package-typer management tool.
 
 Repository
 ----------
