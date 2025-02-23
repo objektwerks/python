@@ -10,7 +10,7 @@ Issues
 
 >I thought Mypy or Pylance might be the source of the problem. So I uninstalled MyPy. Yet Pylance still did not recognize fastapi and pydantic imports.
 
->Previously, I experienced **no** fastapi or pydantic import errors. Rebuilding the virtual env failed to resolve the issue.
+>Previously, I experienced **zero** errors with fastapi or pydantic imports. Rebuilding the virtual env failed to resolve the issue.
 
 >I recently moved to UV, to include Ruff. But Ruff was just as clueless about expression, fastapi, pydantic and requests imports.
 
