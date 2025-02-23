@@ -10,9 +10,11 @@ Issues
 
 >I thought Mypy or Pylance might be the source of the problem. So I uninstalled MyPy. Yet Pylance still did not recognize fastapi and pydantic imports.
 
->The day before, I experienced **no** fastapi or pydantic import errors. Rebuilding the virtual env failed to resolve the issue.
+>Previously, I experienced **no** fastapi or pydantic import errors. Rebuilding the virtual env failed to resolve the issue.
 
 >I recently moved to UV, to include Ruff. But Ruff was just as clueless about expression, fastapi, pydantic and requests imports.
+
+>Reinstalling Mypy, I noticed it complains about modules with no typing info.
 
 >Python ***desperately*** needs a proper build-package-typer management tool.
 
