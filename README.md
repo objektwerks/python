@@ -81,7 +81,7 @@ will be ignored; use `--active` to target the active environment instead.
 Install Dependency
 ------------------
 >To install a dependency:
-1. pip3 install ***dependency***
+1. pip3 install dependency-1
 2. pip3 freeze > requirements.txt
 >or:
 1. uv add 'dependency-1'
