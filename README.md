@@ -64,7 +64,10 @@ Convert to UV
 1. uv init
 2. uv add -r requirements.txt
 3. uv sync
->***Optional*** if virtual env errors occur:
+
+On UV Failure
+-------------
+>If virtual env errors occur:
 1. deactivate
 2. rm -rf .venv ***or*** rm -rf venv
 3. uv venv
