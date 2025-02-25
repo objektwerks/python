@@ -12,7 +12,7 @@ Issues
 
 >Initially, I experienced **zero** errors with fastapi / pydantic imports.
 
->Rebuilding the virtual env failed to resolve the fastap / pydantic import issue.
+>Rebuilding the virtual env failed to resolve the fastapi / pydantic import issue.
 
 >I recently moved to UV, to include Ruff. But Ruff was just as clueless about expression, fastapi, pydantic and requests imports.
 
