@@ -20,8 +20,6 @@ Issues
 
 >The Python community appears to be split on publishing modules with or without types.
 
->Python ***desperately*** needs a proper build-package-typer management tool.
-
 >[2025.2.20] After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished.
 
 >[2025.2.21] Since moving to UV, the below text is randomly printed to the console:
@@ -30,6 +28,8 @@ Issues
 ```
 
 >[2025.2.26] Mypy produces several - ***Cannot find implementation or library stub for module named ...*** - errors.
+
+>Python ***desperately*** needs a proper build-package-typer management tool.
 
 Repository
 ----------
