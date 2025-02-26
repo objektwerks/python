@@ -107,6 +107,7 @@ Upgrade Dependencies
 Mypy
 ----
 1. mypy ./src
+>Optionally run: mypy --install-types
 
 Run
 ---
