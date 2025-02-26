@@ -22,9 +22,9 @@ Issues
 
 >[2025.2.20] After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished.
 
->[2025.2.21] Since moving to UV, the below text is randomly printed to the console:
+>[2025.2.21] Since moving to UV, the below text snippet is randomly printed to the console:
 ```
-%}%{%}(python) %(?:%{x3b32m%}➜ :%{x3b31m%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{%}%{%}%{%}%{%};84e5f828-3221-426a-9cde-fb665547661
+%}%{%}(python) %(?:%{x3b32m%}➜ :%{x3b31m%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{%}%{%}%{%}%{%};
 ```
 
 >[2025.2.26] Mypy produces several - ***Cannot find implementation or library stub for module named ...*** - errors.
