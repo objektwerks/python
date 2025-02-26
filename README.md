@@ -6,7 +6,7 @@ Python
 
 Issues
 ------
->Using fastapi / pydantic can be problematic. Installs work. Yet imports don't always work; while scripts may work.
+>[2025.1.27] Using fastapi / pydantic can be problematic. Installs work. Yet imports don't always work; while scripts may work.
 
 >I thought Mypy or Pylance might be the source of the problem. So I uninstalled MyPy. Yet Pylance still did not recognize fastapi / pydantic imports.
 
@@ -20,6 +20,8 @@ Issues
 
 >The Python community appears to be split on publishing modules with or without types.
 
+>Python ***desperately*** needs a proper build-package-typer management tool.
+
 >[2025.2.20] After going thru ***several*** pip-to-uv conversion processes, the ***import*** issues vanished.
 
 >[2025.2.21] Since moving to UV, the below text is randomly printed to the console:
@@ -27,7 +29,7 @@ Issues
 %}%{%}(python) %(?:%{x3b32m%}➜ :%{x3b31m%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)%{%}%{%}%{%}%{%};84e5f828-3221-426a-9cde-fb665547661
 ```
 
->Python ***desperately*** needs a proper build-package-typer management tool.
+>[2025.2.26] Mypy produces several - ***Cannot find implementation or library stub for module named ...*** - errors.
 
 Repository
 ----------
